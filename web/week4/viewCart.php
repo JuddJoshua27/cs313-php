@@ -30,11 +30,11 @@
             <h4 style="text-align:center;">Your Cart Hold:</h4><br>
             <?php
                 $products = $_SESSION["cart"];
-                echo "<p style='text-align:center;'>"
+                echo "<p style='text-align:center;'>";
                 foreach($products as $product) {
                     echo "$product<br>";
                 }
-                echo "</p>"
+                echo "</p>";
             ?>
             
             
