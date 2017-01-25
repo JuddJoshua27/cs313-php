@@ -29,16 +29,16 @@
         </div>
         
         <form action="handleAdding.php" method="post">
-            <input type="checkbox" name="buy[]" value="one" id="one">
-            <label for="one">$ 1.00 bill</label><br>
-            <input type="checkbox" name="buy[]" value="two" id="two">
-            <label for="two">$ 2.00 bill</label><br>
-            <input type="checkbox" name="buy[]" value="five" id="five">
-            <label for="five">$ 5.00 bill</label><br>
-            <input type="checkbox" name="buy[]" value="ten" id="ten">
-            <label for="ten">$ 10.00 bill</label><br>
-            <input type="checkbox" name="buy[]" value="twenty" id="twenty">
-            <label for="twenty">$ 20.00 bill</label>
+            <input type="checkbox" name="buy[]" value="One" id="One">
+            <label for="One">$ 1.00 bill</label><br>
+            <input type="checkbox" name="buy[]" value="Two" id="Two">
+            <label for="Two">$ 2.00 bill</label><br>
+            <input type="checkbox" name="buy[]" value="Five" id="Five">
+            <label for="Five">$ 5.00 bill</label><br>
+            <input type="checkbox" name="buy[]" value="Ten" id="Ten">
+            <label for="Ten">$ 10.00 bill</label><br>
+            <input type="checkbox" name="buy[]" value="Twenty" id="Twenty">
+            <label for="Twenty">$ 20.00 bill</label>
             <br><br>
             
             <input type="submit" value="Add to Cart">

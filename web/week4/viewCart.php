@@ -19,12 +19,12 @@
             <br><br>
         </header>
         <div>
-            <p style="text-align: center;">
-                Welcome <?php echo $username; ?>
-            </p>
             <form action="logout.php" method="post">
                 <input type="submit" value="Logout">                
             </form>
+            <p style="text-align: center;">
+                Welcome <?php echo $username; ?>
+            </p>
         </div>
         <div>
             <h4 style="text-align:center;">Your Cart Hold:</h4><br>
@@ -32,12 +32,13 @@
                 $products = $_SESSION["cart"];
                 echo "<p style='text-align:center;'>";
                 foreach($products as $product) {
-                    echo "$product<br>";
+                    echo "Quantity - 1 - $product dollar bill<br>";
                 }
                 echo "</p>";
             ?>
             
-            
+            <p>________________________________________________________</p>
+            <p>TOTAL: $ 500.00</p>
         </div>
         
         
