@@ -1,3 +1,13 @@
+<?php
+    session_start();
+    if (!isset($_SESSION["user"])) {
+        header("Location: login.html");
+        exit();
+    }
+                    
+    $username = $_SESSION["user"];
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,20 +21,10 @@
         </header>
         <div>
             <p style="text-align: right;">
-                Welcome 
-                <?php 
-                    start_session();
-                    if (!isset($_SESSION["user"])) {
-                        header("Location: login.html");
-                        exit();
-                    }
-                    
-                    $username = $_SESSION["user"];
-                    echo $username;
-                ?>
+                Welcome <?php echo $username; ?>
             </p>
             <form action="logout.php" method="post">
-                <input type="submit" value="Logout">                
+                <input type="submit" value="Logout">
             </form>
         </div>
         <form action="handleAdding.php" method="post">
