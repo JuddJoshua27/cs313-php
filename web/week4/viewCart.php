@@ -1,5 +1,11 @@
 <?php
     session_start();
+    if (!isset($_SESSION["user"])) {
+        header("Location: login.html");
+        exit();
+    }
+                    
+    $username = $_SESSION["user"];
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,17 +19,8 @@
             <br><br>
         </header>
         <div>
-            <p style="text-align: right;">
-                Welcome 
-                <?php 
-                    if (!isset($_SESSION["user"])) {
-                        header("Location: login.html");
-                        exit();
-                    }
-                    
-                    $username = $_SESSION["user"];
-                    echo $username;
-                ?>
+            <p style="text-align: center;">
+                Welcome <?php echo $username; ?>
             </p>
             <form action="logout.php" method="post">
                 <input type="submit" value="Logout">                

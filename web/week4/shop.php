@@ -20,7 +20,7 @@
             <br><br>
         </header>
         <div>
-            <p style="text-align: right;">
+            <p style="text-align: center;">
                 Welcome <?php echo $username; ?>
             </p>
             <form action="logout.php" method="post">
