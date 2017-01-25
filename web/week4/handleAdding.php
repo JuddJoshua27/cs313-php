@@ -1,10 +1,10 @@
 <?php 
     session_start();
-    echo "it gets here too?"
+    echo "it gets here too?";
     if(!isset($_SESSION["cart"])) {
         $_SESSION["cart"] = array();
     }
-    echo "it gets here?"
+    echo "it gets here?";
     $products = $_POST["buy"];
 
     foreach($products as $product) {
