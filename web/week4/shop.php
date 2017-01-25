@@ -29,15 +29,15 @@
         </div>
         <form action="handleAdding.php" method="post">
             <input type="checkbox" name="buy[]" value="one" id="one">
-            <label for="one">$ 1.00</label><br>
+            <label for="one">$ 1.00 bill</label><br>
             <input type="checkbox" name="buy[]" value="two" id="two">
-            <label for="two">$ 2.00</label><br>
+            <label for="two">$ 2.00 bill</label><br>
             <input type="checkbox" name="buy[]" value="five" id="five">
-            <label for="five">$ 5.00</label><br>
+            <label for="five">$ 5.00 bill</label><br>
             <input type="checkbox" name="buy[]" value="ten" id="ten">
-            <label for="ten">$ 10.00</label><br>
+            <label for="ten">$ 10.00 bill</label><br>
             <input type="checkbox" name="buy[]" value="hundred" id="hundred">
-            <label for="hundred">$ 100.00</label>
+            <label for="hundred">$ 20.00 bill</label>
             <br><br>
             <input type="submit" value="Add to Cart">
             <input type="reset" value="Clear">
