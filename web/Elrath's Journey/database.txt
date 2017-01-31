@@ -1,0 +1,33 @@
+CREATE DATABASE elrath;
+CREATE TABLE public.login
+(
+	id SERIAL PRIMARY KEY NOT NULL,
+	user_name VARCHAR(100) NOT NULL,
+	password VARCHAR(100) NOT NULL,
+	ending_page INT
+);
+CREATE TABLE player
+(
+	id SERIAL PRIMARY KEY NOT NULL,
+	user_id INT REFERENCES login(id) NOT NULL,
+	health_points INT NOT NULL,
+	magic_points INT NOT NULL,
+	attack INT NOT NULL,
+	defence INT NOT NULL,
+	gold INT
+);
+CREATE TABLE inventory
+(
+	id SERIAL PRIMARY KEY NOT NULL,
+	item_name VARCHAR(100) NOT NULL,
+	health_point_manip INT NOT NULL,
+	magic_point_manip INT NOT NULL,
+	attack_manip INT NOT NULL,
+	defence_manip INT NOT NULL,
+	description VARCHAR(250) NOT NULL
+);
+CREATE TABLE player_inventory
+(
+	player_id INT REFERENCES player(id) NOT NULL,
+	inventory_id INT REFERENCES inventory(id) NOT NULL
+);
