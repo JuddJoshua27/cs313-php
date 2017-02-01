@@ -14,5 +14,10 @@
         <header>
             <h1>Elrath's Journey</h1>
         </header>
+        <div>
+            <form>
+                
+            </form>
+        </div>
     </body>
 </html>
