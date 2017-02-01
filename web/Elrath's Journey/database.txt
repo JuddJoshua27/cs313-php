@@ -31,3 +31,6 @@ CREATE TABLE player_inventory
 	player_id INT REFERENCES player(id) NOT NULL,
 	inventory_id INT REFERENCES inventory(id) NOT NULL
 );
+
+CREATE USER ta_user WITH PASSWORD 'pa55w0rD';
+GRANT SELECT, UPDATE, INSERT, DELETE TO ta_user;
