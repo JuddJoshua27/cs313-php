@@ -2,4 +2,7 @@ h1, h2, h3, h4, h5
 {
     background-color:crimson;
     color: darkgrey;
+    text-align: center;
+    font-style: oblique;
+    font-family: fantasy;
 }
