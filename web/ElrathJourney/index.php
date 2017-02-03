@@ -38,9 +38,9 @@ get_db();
             $statement = $db->prepare("SELECT * FROM login;");
             $statement->execute();
 
+            echo "hello world";
             while ($row = $statement->fetch(PDO::FETCH_ASSOC))
             { 
-                echo "hello world";
 	           // The variable "row" now holds the complete record for that
 	           // row, and we can access the different values based on their
 	           // name
