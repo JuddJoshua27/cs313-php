@@ -43,6 +43,7 @@ get_db();
 	           // The variable "row" now holds the complete record for that
 	           // row, and we can access the different values based on their
 	           // name
+                echo "hello world";
 	           echo '<p style="color:red">';
 	           echo $row['user_name'] . ' ' . $row['password'] . ':';
 	           echo '</p>';
