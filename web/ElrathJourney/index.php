@@ -1,4 +1,5 @@
 <?php
+/*
 $dbUser = 'weblogin';
 $dbPassword = 'elrathsJourney';
 $dbName = 'elrath';
@@ -18,7 +19,7 @@ catch (PDOException $ex)
 	echo "Error connecting to DB. Details: $ex";
 	die();
 }
-
+*/
 
 
 ?>
