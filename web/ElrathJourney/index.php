@@ -30,9 +30,6 @@ catch (PDOException $ex)
         <link rel="stylesheet" type="text/css"  href="elrath.css">
     </head>
     <body>
-        <header>
-            <h1>Elrath's Journey</h1>
-        </header>
         
     </body>
 </html>
