@@ -1,4 +1,5 @@
 <?php
+
 function get_db() {
 	$db = NULL;
 	try {
@@ -24,32 +25,7 @@ function get_db() {
 	}
 	return $db;
 }
-get_db();
 
+header("Location: homepage.php");
+die("Redirected to...");
 ?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Elrath's Journey Homepage</title>
-        <link rel="stylesheet" type="text/css"  href="elrath.css">
-    </head>
-    <body>
-        <?php
-         echo "<h1>hello world</h1>";
-            $statement = $db->prepare("SELECT * FROM login");
-            $statement->execute();
-
-            echo "<h1>hello world</h1>";
-            while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-            { 
-	           // The variable "row" now holds the complete record for that
-	           // row, and we can access the different values based on their
-	           // name
-                echo "hello world";
-	           echo '<p style="color:red">';
-	           echo $row['user_name'] . ' ' . $row['password'] . ':';
-	           echo '</p>';
-            }
-        ?>
-    </body>
-</html>
