@@ -36,7 +36,7 @@ get_db();
     <body>
         <?php
          echo "<h1>hello world</h1>";
-            $statement = $db->prepare("SELECT * FROM login;");
+            $statement = $db->prepare("SELECT * FROM login");
             $statement->execute();
 
             echo "<h1>hello world</h1>";
