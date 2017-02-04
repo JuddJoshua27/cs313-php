@@ -9,11 +9,11 @@ function get_db() {
 			$dbUrl = "postgres://weblogin:elrathsJourney@localhost:5432/elrath";
 		}
 		$dbopts = parse_url($dbUrl);
-		$dbHost = $dbopts["host"];
-		$dbPort = $dbopts["port"];
-		$dbUser = $dbopts["user"];
-		$dbPassword = $dbopts["pass"];
-		$dbName = ltrim($dbopts["path"],'/');
+		$dbHost = $dbopts["localhost"];
+		$dbPort = $dbopts["5432"];
+		$dbUser = $dbopts["weblogin"];
+		$dbPassword = $dbopts["elrathsJourney"];
+		$dbName = ltrim($dbopts["elrath"],'/');
 		// Create the PDO connection
 		$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 		// this line makes PDO give us an exception when there are problems, and can be very helpful in debugging!
@@ -38,8 +38,9 @@ function get_db() {
         
             $db = get_db();
         
-            $statement = $db::query("SELECT user_name, password FROM login;");
-            //$statement->execute();
+            $statement = $db->perpare("SELECT user_name, password FROM login;");
+            $statement->execute();
+        
         
             while ($row = $statement->fetch(PDO::FETCH_ASSOC))
             {
