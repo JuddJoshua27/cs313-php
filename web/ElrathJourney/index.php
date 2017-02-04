@@ -37,17 +37,18 @@ $db = get_db();
     </head>
     <body>
         <?php
-         
+            echo "here 1";
             $statement = $db->prepare("SELECT user_name, password FROM login");
             $statement->execute();
-        
+            echo "here 2";
             while ($row = $statement->fetch(PDO::FETCH_ASSOC))
             {
+                echo "here 3";
                 // The variable "row" now holds the complete record for that
                 // row, and we can access the different values based on their
                 // name
                 echo '<p>';
-                echo $row['user_name'] . ' ' . $row['password'] . ':';
+                echo $row['user_name'] . ' ' . $row['password'];
                 echo '</p>';
             }
         
