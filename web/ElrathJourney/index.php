@@ -38,7 +38,7 @@ get_db();
             $statement = $db->prepare("SELECT * FROM login;");
             $statement->execute();
 
-            echo "hello world";
+            echo "<h1>hello world</h1>";
             while ($row = $statement->fetch(PDO::FETCH_ASSOC))
             { 
 	           // The variable "row" now holds the complete record for that
