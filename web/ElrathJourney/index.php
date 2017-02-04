@@ -20,7 +20,7 @@ function get_db() {
 		$db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 	}
 	catch (PDOException $ex) {
-		echo "Error connecting to DB. Details: $ex";
+		echo "<h1>Error connecting to DB. Details: $ex</h1>";
 		die();
 	}
 	return $db;
