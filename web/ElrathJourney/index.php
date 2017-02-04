@@ -38,7 +38,7 @@ $db = get_db();
     <body>
         <?php
          
-            $statement = $db->prepare("SELECT * FROM login");
+            $statement = $db->prepare("SELECT user_name, password FROM login");
             $statement->execute();
         
             while ($row = $statement->fetch(PDO::FETCH_ASSOC))
