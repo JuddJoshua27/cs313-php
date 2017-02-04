@@ -39,7 +39,7 @@ function get_db() {
             $db = get_db();
         
             echo "<h1>here 1</h1>";
-            $statement = $db->prepare("SELECT user_name, password FROM login");
+            $statement = $db->prepare("SELECT user_name, password FROM login;");
             $statement->execute();
             echo "<h1>here 2</h1>";
         
