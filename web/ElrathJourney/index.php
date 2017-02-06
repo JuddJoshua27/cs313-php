@@ -1,5 +1,5 @@
 <?php
-
+/*
 function get_db() {
 	$db = NULL;
 	try {
@@ -25,7 +25,7 @@ function get_db() {
 	}
 	return $db;
 }
-
+*/
 ?>
 <!DOCTYPE html>
 <html>
@@ -35,7 +35,7 @@ function get_db() {
     </head>
     <body>
         <?php
-        
+        /*
             $db = get_db();
         
             $statement = $db->perpare("SELECT user_name, password FROM login;");
@@ -51,7 +51,7 @@ function get_db() {
                 echo $row['user_name'] . ' ' . $row['password'];
                 echo '</h1>';
             }
-        
+        */
         ?>
     </body>
 </html>
