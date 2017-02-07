@@ -1,29 +1,23 @@
 <?php
 
-function get_db() {
-	$db = NULL;
-	try {
-		// default Heroku Postgres configuration URL
-		$dbUrl = getenv('localhost');
-		if (!isset($dbUrl) || empty($dbUrl)) {
-			$dbUrl = "postgres://weblogin:elrathsJourney@localhost:5432/elrath";
-		}
-		$dbopts = parse_url($dbUrl);
-		$dbHost = $dbopts["localhost"];
-		$dbPort = $dbopts["5432"];
-		$dbUser = $dbopts["weblogin"];
-		$dbPassword = $dbopts["elrathsJourney"];
-		$dbName = ltrim($dbopts["elrath"],'/');
-		// Create the PDO connection
-		$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-		// this line makes PDO give us an exception when there are problems, and can be very helpful in debugging!
-		$db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-	}
-	catch (PDOException $ex) {
-		echo "<h1>Error connecting to DB. Details: $ex</h1>";
-		die();
-	}
-	return $db;
+$dbUser = 'weblogin';
+$dbPassword = 'elrathsJourney';
+$dbName = 'elrath';
+$dbHost = 'localhost';
+$dbPort = '5432';
+try
+{
+	// Create the PDO connection
+	$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+	// this line makes PDO give us an exception when there are problems, and can be very helpful in debugging!
+	$db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+}
+catch (PDOException $ex)
+{
+	// If this were in production, you would not want to echo
+	// the details of the exception.
+	echo "Error connecting to DB. Details: $ex";
+	die();
 }
 
 ?>
@@ -36,8 +30,6 @@ function get_db() {
     <body>
         <?php
     
-            $db = get_db();
-        
             $statement = $db->perpare("SELECT user_name, password FROM login;");
             $statement->execute();
         
