@@ -29,7 +29,7 @@ catch (PDOException $ex)
     </head>
     <body>
         <?php
-    
+    /*
             $statement = $db->perpare("SELECT user_name, password FROM login;");
             $statement->execute();
         
@@ -43,7 +43,7 @@ catch (PDOException $ex)
                 echo $row['user_name'] . ' ' . $row['password'];
                 echo '</h1>';
             }
-
+*/
         ?>
     </body>
 </html>
