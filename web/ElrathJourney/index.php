@@ -18,6 +18,8 @@
 		$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 		// this line makes PDO give us an exception when there are problems, and can be very helpful in debugging!
 		$db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+        
+        echo "<h1>Connected Successfully!</h1>";
 	}
 	catch (PDOException $ex) {
 		// If this were in production, you would not want to echo
@@ -40,10 +42,10 @@
         <?php
             
             $conn = get_db();
-        
+            echo "<h1>Thingy Created correctly</h1>";
             $statement = $conn->perpare("SELECT user_name, password FROM login;");
             $statement->execute();
-        
+            echo "<h1>Query asked rightly</h1>";
         
             while ($row = $statement->fetch(PDO::FETCH_ASSOC))
             {
@@ -53,6 +55,7 @@
                 echo '<h1>';
                 echo $row['user_name'] . ' ' . $row['password'];
                 echo '</h1>';
+                echo "<h1>output?</h1>";
             }
 
         ?>
