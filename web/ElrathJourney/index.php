@@ -43,7 +43,7 @@
             
             $conn = get_db();
             echo "<h1>Thingy Created correctly</h1>";
-            $statement = $conn->perpare("SELECT user_name, password FROM login;");
+            $statement = $conn->perpare("SELECT user_name, password FROM login");
             $statement->execute();
             echo "<h1>Query asked rightly</h1>";
         
