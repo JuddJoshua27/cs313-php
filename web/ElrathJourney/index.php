@@ -43,7 +43,8 @@
             
             $conn = get_db();
             echo "<h1>Thingy Created correctly</h1>";
-            $statement = $conn->perpare("SELECT * FROM inventory");
+            $statement = $conn->perpare("SELECT item_name, description FROM inventory");
+            echo "<h1>here?</h1>"
             $statement->execute();
             echo "<h1>Query asked rightly</h1>";
         
