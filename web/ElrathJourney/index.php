@@ -43,7 +43,7 @@
             
             $conn = get_db();
             echo "<h1>Thingy Created correctly</h1>";
-            $statement = $conn->perpare("SELECT user_name, password FROM login");
+            $statement = $conn->perpare("SELECT * FROM inventory");
             $statement->execute();
             echo "<h1>Query asked rightly</h1>";
         
@@ -53,7 +53,7 @@
                 // row, and we can access the different values based on their
                 // name
                 echo '<h1>';
-                echo $row['user_name'] . ' ' . $row['password'];
+                echo $row['item_name'] . ' : ' . $row['description'];
                 echo '</h1>';
                 echo "<h1>output?</h1>";
             }
