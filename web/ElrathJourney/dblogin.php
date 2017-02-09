@@ -11,7 +11,7 @@ $password = htmlspecialchars($_POST['pword']);
 echo "the username is: $username <br>";
 echo "the password is: $password";
 
-$statement = $comm->prepare("INSERT INTO login(user_name, password) VALUES($username, $password)");
+$statement = $comm->prepare("INSERT INTO login(user_name, password) VALUES ('$username', '$password')");
 $statement->execute();
 
 $statement = $comm->prepare("SELECT user_name, password FROM login");
