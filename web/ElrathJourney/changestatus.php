@@ -11,7 +11,7 @@ if ($player_status == "current")
     $statement = $comm->prepare("UPDATE player SET status = 'inactive' WHERE id = '$playerID'");
     $statement->execute();
 }
-/*
+
 $statement = $comm->prepare("SELECT * FROM player");
 $statement->execute();
 
@@ -21,5 +21,5 @@ foreach ($rows as $row)
 {
     echo $row["status"] . " : Health:" . $row["health"] . ", Magic:" . $row["magic"] . ", Attack:" . $row["attack"] . ", Defence:" . $row["defence"] . ", Gold:" . $row["gold"] . "<br>";
 }
-*/
+
 ?>
