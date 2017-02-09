@@ -18,7 +18,9 @@ echo "queried<br>";
 
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
-    echo $row["status"] . " : " . $row["health"] . ", " . $row["magic"] . ", " . $row["attack"] . ", <br>          " . $row["defence"] . ", " . $row["gold"] . "<br>";
+    echo $row["status"] . " : Health:" . $row["health"] . ", Magic:" . $row["magic"] . ", Attack:" . $row["attack"] . ", Defence:" . $row["defence"] . ", Gold:" . $row["gold"] . "<br>";
+    
+    
 }
 
 
