@@ -25,7 +25,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	echo '</p>';
 }
 
-$statement = $comm->prepare("DELETE FROM login WHERE user_name = '$username'");
+$statement = $comm->prepare("DELETE FROM login");
 $statement->execute();
 
 $statement = $comm->prepare("SELECT user_name, password FROM login");
