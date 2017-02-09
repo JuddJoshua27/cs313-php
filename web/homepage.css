@@ -25,10 +25,14 @@ h2, h5, h4
 }
 .elrathBorder
 {
-    border: 3px ridge white;
+    border: 3px ridge yellow;
     border-bottom-left-radius: 30px;
     border-top-right-radius: 30px;
     box-shadow: 5px 5px 2.5px white;
+}
+.elrathBorder:hover
+{
+    box-shadow: 5px 5px 2.5px red;
 }
 body
 {

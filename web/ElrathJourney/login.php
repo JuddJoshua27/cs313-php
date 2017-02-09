@@ -1,3 +1,6 @@
+<?php
+    require dbcontrol.php;
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,7 +17,6 @@
         </style>
     </head>
     <body>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <a href="login.php"><input type="button" class="button" value="Log In"></a>
+        
     </body>
 </html>
