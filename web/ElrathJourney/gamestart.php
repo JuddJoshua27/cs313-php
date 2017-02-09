@@ -8,13 +8,11 @@
             {
                 background-image: url(pics/Hallway.jpg);
                 background-repeat: no-repeat;
-                background-size: 100%;
             }
         
         </style>
     </head>
     <body>
         <h1>You are about to choose your own adventure!</h1>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </body>
 </html>
