@@ -3,7 +3,7 @@ include "dbcontrol.php";
 
 $comm = get_db();
 
-echo "username and password<br>";
+echo "username<br>";
 
 $username = htmlspecialchars($_POST['username']);
 
@@ -21,9 +21,9 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
     }
 }
 
-$statement = $comm->prepare("INSERT INTO login(user_name) VALUES ('$username'");
+$statement = $comm->prepare("INSERT INTO login(user_name) VALUES ('$username')");
 $statement->execute();
-
+echo "inserted";
 $statement = $comm->prepare("SELECT user_name FROM login");
 $statement->execute();
 
