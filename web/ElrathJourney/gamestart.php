@@ -8,17 +8,18 @@ session_start();
     }
 
 // Create a player
-$statement = $comm->prepare("INSERT INTO player(health, magic, attack, defence, gold) VALUES(20, 10, 1, 0, 0)");
+$statement = $comm->prepare("INSERT INTO player(health, magic, attack, defence, gold, status) VALUES(500, 200, 100, 100, 356, 'current')");
+$statement->execute();
+
+$statement = $comm->prepare("SELECT * FROM player");
 $statement->execute();
 
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
-        $_SESSION["playerID"] = $row['id'];    
+    echo $row["status"] . " : " . $row["health"] . ", " . $row["magic"] . ", " . $row["attack"] . ", <br>          " . $row["defence"] . ", " . $row["gold"] . "<br>"
 }
 
-// Create a game_instance
-$statement = $comm->prepare("INSERT INTO game_instance(login_id, page_id, player_id) VALUES('$_SESSION["userID"]', 1, '$_SESSION["playerID"]')");
-$statement->execute();
+
 
 
 
