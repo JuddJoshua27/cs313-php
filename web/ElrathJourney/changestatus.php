@@ -5,10 +5,12 @@ $comm = get_db();
 session_start();
 $playerID = $_SESSION["playerID"];
 $player_status = $_SESSION["player_session"];
+
+
     
 if ($player_status == "current")
 {
-    $statement = $comm->prepare("UPDATE player SET status = 'inactive' WHERE id = '$playerID'");
+    $statement = $comm->prepare("UPDATE player SET status = 'inactive'");
     $statement->execute();
 }
 
