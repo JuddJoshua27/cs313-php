@@ -6,14 +6,15 @@
         <style>
             body
             {
-                background-image: url(pics/landscape.jpg);
-                background-repeat:repeat;
-                background-size: 100%;
+                background-image: url(pics/REALFinalBackground.jpg);
+                background-repeat:no-repeat;
+                background-position: center;
+                background-color: black;
             }
         
         </style>
     </head>
     <body>
-        <img class="picture" src="pics/Hallway.jpg">
+        
     </body>
 </html>
