@@ -18,8 +18,16 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
 	if ($row['user_name'] == $username)
     {
-        header("Location: gamestart.php");
-        die("Redirected to...");
+        if ($row['password'] == $password)
+        {
+            header("Location: gamestart.php");
+            die("Redirected to...");
+        }
+        else
+        {
+            header("Location: login.html");
+            die("Redirected to...");
+        }
     }
 }
 
