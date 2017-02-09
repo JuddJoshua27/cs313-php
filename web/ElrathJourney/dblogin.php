@@ -6,7 +6,7 @@ $comm = get_db();
 $username = $_POST('username');
 $password = $_POST('pword');
 
-echo $username;
-echo $password;
+echo "the username is: $username";
+echo "the password is: $password";
 
 ?>
