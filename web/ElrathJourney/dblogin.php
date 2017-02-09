@@ -1,5 +1,5 @@
 <?php
-include "dbcontrol.php";
+require "dbcontrol.php";
 
 $comm = get_db();
 

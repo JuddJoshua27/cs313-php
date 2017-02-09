@@ -1,5 +1,5 @@
 <?php
-include "dbcontrol.php";
+require "dbcontrol.php";
 $comm = get_db();
 session_start();
     if (!isset($_SESSION["userID"])) {
@@ -20,9 +20,12 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
     echo $row["status"] . " : Health:" . $row["health"] . ", Magic:" . $row["magic"] . ", Attack:" . $row["attack"] . ", Defence:" . $row["defence"] . ", Gold:" . $row["gold"] . "<br>";
     
-    
+    if ($row["status"] == 'current')
+    {
+        $_SESSION["playerID"] = $row["id"];
+    }
 }
-
+echo $_SESSION["playerID"];
 
 
 
