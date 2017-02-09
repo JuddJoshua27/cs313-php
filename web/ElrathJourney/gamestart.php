@@ -6,7 +6,7 @@
         <style>
             body
             {
-                background-image: url(pics/REALFinalBackground.jpg);
+                background-image: url(pics/Hallway.jpg);
                 background-repeat: no-repeat;
                 background-size: 100%;
             }
@@ -14,7 +14,6 @@
         </style>
     </head>
     <body>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <a href="login.html"><input type="button" class="button" value="Log In"></a>
+        <h1>You are about to choose your own adventure!</h1>
     </body>
 </html>

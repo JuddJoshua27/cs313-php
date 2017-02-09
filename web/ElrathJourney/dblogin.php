@@ -23,19 +23,9 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 
 $statement = $comm->prepare("INSERT INTO login(user_name) VALUES ('$username')");
 $statement->execute();
-echo "inserted";
-$statement = $comm->prepare("SELECT user_name FROM login");
-$statement->execute();
 
-while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-{
-	
-	echo '<p>';
-	echo $row['user_name'];
-	echo '</p>';
-}
-/*
-header("Location: gamestart.php");
+
+header("Location: login.php");
 die("Redirected to...");
-*/
+
 ?>
