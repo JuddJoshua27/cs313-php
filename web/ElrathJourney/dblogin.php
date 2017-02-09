@@ -35,7 +35,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
 	if ($row['user_name'] == $username)
     {
-
+        session_start();
         $_SESSION["userID"] = $row['id'];
         
         header("Location: gamestart.php");
