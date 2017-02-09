@@ -22,10 +22,13 @@
         </p><br><br><br><br><br><br><br><br>
         <div style="margin-left: 45%;">
             <form action="dblogin.php" method="post">
+                
                 <label class="text">Name: </label><br>
-                <input type="text" name="username" id="username" placeholder="Elrath the Hobbit"><br><br>
+                <input type="text" name="username" id="username" placeholder="Elrath the Hobbit" required><br><br>
+                
                 <label class="text">Password: </label><br>
-                <input type="password" name="pword" id="pword"><br><br>
+                <input type="password" name="pword" id="pword" required><br><br>
+                
                 <input type="submit" name="submit" id="submit" value="New Player">
                 <input type="submit" name="submit" id="submit" value="Submit">
             </form>
