@@ -35,9 +35,8 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
 	if ($row['user_name'] == $username)
     {
-        $newid = $comm->lastInsertId();
 
-        $_SESSION["userID"] = $newid;
+        $_SESSION["userID"] = $row['id'];
         
         header("Location: gamestart.php");
         die("Redirected to...");
