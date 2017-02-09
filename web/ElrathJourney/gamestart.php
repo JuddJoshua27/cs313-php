@@ -30,7 +30,7 @@ $newid = $comm->lastInsertId();
 echo $newid;
 echo $user_id;
 
-$statement = $comm->prepare("INSERT INTO game_instance(login_id, page_id, player_id) VALUES ('$user_id', 1, '$newid')");
+$statement = $comm->prepare("INSERT INTO game_instance(login_id, page_id, player_id) VALUES ($user_id, 1, $newid)");
 $statement->execute();
 
 echo "gameinstance inserted into";
