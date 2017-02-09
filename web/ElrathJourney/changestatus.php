@@ -6,7 +6,7 @@ session_start();
 $playerID = $_SESSION["playerID"];
 $player_status = $_SESSION["player_session"];
 
-
+echo $player_status;
     
 if ($player_status == "current")
 {
