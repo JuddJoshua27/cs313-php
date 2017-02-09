@@ -8,12 +8,12 @@
             {
                 background-image: url(pics/landscape.jpg);
                 background-repeat:repeat;
+                background-size: 100%;
             }
         
         </style>
     </head>
     <body>
-        <h1>You are about to choose your own adventure!</h1>
         <img class="picture" src="pics/Hallway.jpg">
     </body>
 </html>
