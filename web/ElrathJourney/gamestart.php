@@ -8,7 +8,7 @@ session_start();
     }
 
 // Create a player
-$statement = $comm->prepare("INSERT INTO player(health, magic, attack, defence, gold, status) VALUES (500, 200, 100, 100, 356, 'current')");
+$statement = $comm->prepare("INSERT INTO player(health, magic, attack, defence, gold) VALUES (500, 200, 100, 100, 356)");
 $statement->execute();
 echo "working?<br>";
 
@@ -18,19 +18,13 @@ echo "queried<br>";
 
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
-    echo $row["status"] . " : Health:" . $row["health"] . ", Magic:" . $row["magic"] . ", Attack:" . $row["attack"] . ", Defence:" . $row["defence"] . ", Gold:" . $row["gold"] . "<br>";
+    echo $row["id"] . " : Health:" . $row["health"] . ", Magic:" . $row["magic"] . ", Attack:" . $row["attack"] . ", Defence:" . $row["defence"] . ", Gold:" . $row["gold"] . "<br>";
     
-    if ($row["status"] == 'current')
-    {
-        session_start();
-        $_SESSION["playerID"] = $row["id"];
-        $_SESSION["player_status"] = $row["status"];
-    }
 }
 
-header("Location: changestatus.php");
-die("Redirected to...");
+$newid = $comm->lastInsertId('id');
 
+echo $newid;
 
 
 
