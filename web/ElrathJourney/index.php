@@ -39,25 +39,6 @@
         <link rel="stylesheet" type="text/css"  href="elrath.css">
     </head>
     <body>
-        <?php
-            
-            $conn = get_db();
-            echo "<h1>Thingy Created correctly</h1>";
-            $statement = $conn->prepare("SELECT item_name, health_manip, magic_manip, attack_manip, defence_manip, description FROM inventory");
-            $statement->execute();
-            echo "<h1>Query asked rightly</h1>";
-        
-            while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-            {
-                // The variable "row" now holds the complete record for that
-                // row, and we can access the different values based on their
-                // name
-                echo '<h1>';
-                echo $row['item_name'] . ' : ' . $row['description'];
-                echo '</h1>';
-                echo "<h1>output?</h1>";
-            }
-
-        ?>
+        <a href=""><input type="button" class="button" value="Log In"></a>
     </body>
 </html>

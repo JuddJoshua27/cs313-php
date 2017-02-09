@@ -13,3 +13,13 @@ body
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
+.button
+{
+    background-color:black;
+    color:white;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-color:white;
+    border-style: double;
+}
