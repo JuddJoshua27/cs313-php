@@ -43,7 +43,7 @@
             
             $conn = get_db();
             echo "<h1>Thingy Created correctly</h1>";
-            $statement = $conn->prepare("SELECT item_name, health_manip, magic_manip, attack_manip, defence-manip, description FROM inventory");
+            $statement = $conn->prepare("SELECT item_name, health_manip, magic_manip, attack_manip, defence_manip, description FROM inventory");
             $statement->execute();
             echo "<h1>Query asked rightly</h1>";
         
