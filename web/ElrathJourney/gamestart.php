@@ -6,13 +6,14 @@
         <style>
             body
             {
-                background-image: url(pics/Hallway.jpg);
-                background-repeat: no-repeat;
+                background-image: url(pics/landscape.jpg);
+                background-repeat:repeat;
             }
         
         </style>
     </head>
     <body>
         <h1>You are about to choose your own adventure!</h1>
+        <img class="picture" src="pics/Hallway.jpg">
     </body>
 </html>
