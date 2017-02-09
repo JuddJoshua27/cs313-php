@@ -31,13 +31,6 @@ h1, h2, h3, h4, h5
     color:blue;
     text-shadow:white;
 }
-form
-{
-    border-bottom-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-color:white;
-    box-shadow: 3px 3px 3px red;
-}
 .centerAlign
 {
     display:block;
