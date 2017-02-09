@@ -15,13 +15,12 @@ echo "working?<br>";
 $statement = $comm->prepare("SELECT * FROM player");
 $statement->execute();
 echo "queried<br>";
-/*
+
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
-    echo $row["status"] . " : " . $row["health"] . ", " . $row["magic"] . ", " . $row["attack"] . ", <br>          " . $row["defence"] . ", " . $row["gold"] . "<br>"
+    echo $row["status"] . " : " . $row["health"] . ", " . $row["magic"] . ", " . $row["attack"] . ", <br>          " . $row["defence"] . ", " . $row["gold"] . "<br>";
 }
 
-*/
 
 
 
