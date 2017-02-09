@@ -6,7 +6,7 @@
         <style>
             body
             {
-                background-image: url(pics/REALFinalBackground.jpg);
+                background-image: url(pics/Hallway.jpg);
                 background-repeat:no-repeat;
                 background-position: center;
                 background-color: black;
