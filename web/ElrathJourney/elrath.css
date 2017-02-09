@@ -22,4 +22,7 @@ body
     border-top-right-radius: 30px;
     border-color:white;
     border-style: double;
+    padding:10px 10px 10px 10px;
+    margin-left: auto;
+    margin-right:auto;
 }
