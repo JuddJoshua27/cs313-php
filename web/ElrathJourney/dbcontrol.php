@@ -30,16 +30,7 @@
 	return $db;
 }
 
-?>
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Elrath's Journey Homepage</title>
-        <link rel="stylesheet" type="text/css"  href="elrath.css">
-    </head>
-    <body>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <a href=""><input type="button" class="button" value="Log In"></a>
-    </body>
-</html>
+
+
+?>
