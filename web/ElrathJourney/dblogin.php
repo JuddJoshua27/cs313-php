@@ -23,11 +23,6 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
             header("Location: gamestart.php");
             die("Redirected to...");
         }
-        else
-        {
-            header("Location: login.html");
-            die("Redirected to...");
-        }
     }
 }
 
@@ -44,4 +39,6 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	echo $row['user_name'] . ' - ' . $row['password'];
 	echo '</p>';
 }
+header("Location: gamestart.php");
+die("Redirected to...");
 ?>
