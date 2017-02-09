@@ -1,6 +1,6 @@
 <?php
 
-    include dbcontrol.php;
+    include "dbcontrol.php";
 
     $conn = get_db();
 
