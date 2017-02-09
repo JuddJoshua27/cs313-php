@@ -22,7 +22,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
     
 }
 
-$newid = $comm->lastInsertId('player', 'id');
+$newid = $comm->lastInsertId();
 
 echo $newid;
 
