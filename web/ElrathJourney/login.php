@@ -1,5 +1,5 @@
 <?php
-/*
+
     function get_db() {
 	$db = NULL;
 	try {
@@ -32,7 +32,7 @@
 }
 
 $conn = get_db();
-*/
+
 ?>
 <!DOCTYPE html>
 <html>
