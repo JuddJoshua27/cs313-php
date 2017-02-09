@@ -6,7 +6,7 @@ session_start();
 $playerID = $_SESSION["playerID"];
 $player_status = $_SESSION["player_session"];
 
-echo $player_status;
+echo $player_status . "<br> you are my only hope.<br>";
     
 if ($player_status == "current")
 {

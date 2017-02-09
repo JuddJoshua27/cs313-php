@@ -22,6 +22,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
     
     if ($row["status"] == 'current')
     {
+        session_start();
         $_SESSION["playerID"] = $row["id"];
         $_SESSION["player_status"] = $row["status"];
     }
