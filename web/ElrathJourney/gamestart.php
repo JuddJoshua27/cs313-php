@@ -8,7 +8,7 @@
             {
                 background-image: url(pics/Hallway.jpg);
                 background-repeat:no-repeat;
-                background-position:35% 50%;
+                background-position:50% 75%;
                 background-color: black;
             }
         
