@@ -20,9 +20,11 @@
         </style>
     </head>
     <body>
-        <p class="text">Please Log In</p><br>
-        <p class="text">If returning please enter your username and password and click <span class="standout">Submit</span></p><br>
-        <p class="text">If new, please enter your desired username and password and click <span class="standout">New Player</span> </p><br><br>
+        <p class="text">
+            Please Log In<br>
+            If returning please enter your username and password and click <span class="standout">Submit</span><br>
+            If new, please enter your desired username and password and click <span class="standout">New Player</span> 
+        </p><br><br>
         <form class="centerAlign" action="dblogin.php" method="post">
             <label class="text">Name: </label>
             <input type="text" name="username" id="username" placeholder="Elrath the Hobbit"><br>
