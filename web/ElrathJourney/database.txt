@@ -13,8 +13,7 @@ CREATE TABLE public.player
 	magic SMALLINT NOT NULL,
 	attack SMALLINT NOT NULL,
 	defence SMALLINT NOT NULL,
-	gold INT,
-	status VARCHAR(20) NOT NULL
+	gold INT
 );
 CREATE TABLE public.inventory
 (
