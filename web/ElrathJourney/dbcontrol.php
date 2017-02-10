@@ -18,8 +18,6 @@
 		$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 		// this line makes PDO give us an exception when there are problems, and can be very helpful in debugging!
 		$db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-        
-        echo "<h1>Connected Successfully!</h1>";
 	}
 	catch (PDOException $ex) {
 		// If this were in production, you would not want to echo
