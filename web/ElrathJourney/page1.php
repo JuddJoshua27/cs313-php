@@ -16,7 +16,7 @@
         </style>
     </head>
     <body>
-        <div style="display:inline; margin-right: 35%;">
+        <div style="display:inline; margin-right: 35%; border:3px solid white;">
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>            
         </div>
         
