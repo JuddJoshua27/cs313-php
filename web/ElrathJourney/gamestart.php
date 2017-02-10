@@ -31,6 +31,7 @@ $statement->execute();
 $statement = $comm->prepare("INSERT INTO player_inventory(player_id, inventory_id) VALUES($last_id, 7)");
 $statement->execute();
 
-echo "inventory populated";
+header("Location: page1.php");
+die("Redirected to...");
 
 ?> 
