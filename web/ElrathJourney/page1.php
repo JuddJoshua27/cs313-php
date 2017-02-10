@@ -20,8 +20,18 @@ $comm = get_db();
         </style>
     </head>
     <body>
-        <h3 style="border:3px solid white;color:white;">
-            this is where the stats are going to go!
-        </h3> 
+       <?php
+        session_start();
+        $userID = $_SESSION["userID"];
+        
+        $statement = $comm->prepare("SELECT * FROM player");
+        $statement->execute();
+        
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+        {
+            
+            
+        }
+        ?>
     </body>
 </html>
