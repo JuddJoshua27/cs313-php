@@ -31,17 +31,17 @@ $comm = get_db();
         {
             $user_name = $row["user_name"];
         }
-        
+        echo "<h3>user name is: " . $user_name . "</h3>";
         $statement = $comm->prepare("SELECT * FROM player WHERE login_id = $userID");
         $statement->execute();
-        
+        echo "<h3successfully queried</h3>";
         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-        {
+        {/*
             echo "<h3>";
             echo $user_name . "<br>HP:" . $row["health"] . " | MP:" . $row["magic"]"<br>";
             echo "Attack:" . $row["attack"] . " | Defence:" . $row["defence"] . "<br>";
             echo "Gold: " . $row["gold"];
-            echo "</h3>";
+            echo "</h3>";*/
         }
         ?>
     </body>
