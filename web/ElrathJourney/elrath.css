@@ -9,12 +9,13 @@ h1, h2, h4, h5
 h3
 {
     background-color: brown;
-    opacity: .3;
-    border-color: darkgrey;
-    border-top-style: ridge;
-    border-collapse: collapse;
-    border-bottom-left-radius: 25px;
-    border-top-right-radius: 25px;
+    opacity: .5;
+    border-bottom: 4px solid;
+    border-bottom-color: darkgrey;
+    border-bottom-left-radius: 100px;
+    border-top: 1.5px solid;
+    border-top-color: darkgrey;
+    border-top-right-radius: 100px;                
 }
 .button
 {

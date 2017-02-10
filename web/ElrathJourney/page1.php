@@ -1,8 +1,7 @@
 <?php
-/*
-require dbcontrol.php;
+require "dbcontrol.php";
 $comm = get_db();
-*/
+
 ?>
 <!DOCTYPE html>
 <html>
