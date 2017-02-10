@@ -3,15 +3,14 @@ require "dbcontrol.php";
 
 $comm = get_db();
 
-echo "username<br>";
-
+// Get the username from the form
 $username = htmlspecialchars($_POST['username']);
 
-echo "the username is: $username <br>";
-
+// query the db for everything in login
 $statement = $comm->prepare("SELECT * FROM login");
 $statement->execute();
 
+// check if the username is already in use. if so redirect the player to the correct page they saved on. 
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
 	if ($row['user_name'] == $username)
@@ -20,17 +19,29 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 
         $_SESSION["userID"] = $row['id'];
         
-        header("Location: page1.php");
-        die("Redirected to...");
+        
+        switch ($row["page_number"])
+        {
+            case 1:
+                header("Location: page1.php");
+                die("Redirected to...");
+                break;
+            default:
+                echo "This is awkward!";
+        }
+            
     }
 }
 
-$statement = $comm->prepare("INSERT INTO login(user_name) VALUES ('$username')");
+// if the username is not found in the db, create a new one and insert into the db.
+$statement = $comm->prepare("INSERT INTO login(user_name, page_number) VALUES ('$username', 1)");
 $statement->execute();
 
+// now double check of the username is in the db
 $statement = $comm->prepare("SELECT * FROM login");
 $statement->execute();
 
+// redirect them to create their character.
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
 	if ($row['user_name'] == $username)
@@ -42,4 +53,5 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
         die("Redirected to...");
     }
 }
+
 ?>

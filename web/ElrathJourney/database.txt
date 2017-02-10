@@ -2,11 +2,13 @@ CREATE DATABASE elrath;
 CREATE TABLE public.login
 (
 	id SERIAL PRIMARY KEY NOT NULL,
-	user_name VARCHAR(100) NOT NULL UNIQUE
+	user_name VARCHAR(100) NOT NULL UNIQUE,
+	page_number INT NOT NULL
 );
 CREATE TABLE public.player
 (
 	id SERIAL PRIMARY KEY NOT NULL,
+	login_id INT REFERENCES login(id) NOT NULL,
 	health SMALLINT NOT NULL,
 	magic SMALLINT NOT NULL,
 	attack SMALLINT NOT NULL,
@@ -29,26 +31,27 @@ CREATE TABLE public.player_inventory
 	player_id INT REFERENCES player(id) NOT NULL,
 	inventory_id INT REFERENCES inventory(id) NOT NULL
 );
-CREATE TABLE public.page
-(
-	id SERIAL PRIMARY KEY NOT NULL,
-	story TEXT NOT NULL UNIQUE
-);
-CREATE TABLE public.storyline
-(
-	id SERIAL PRIMARY KEY NOT NULL,
-	src_page_id INT REFERENCES page(id) NOT NULL,
-	next_page_id INT REFERENCES page(id) NOT NULL,
-	choice TEXT NOT NULL UNIQUE
-);
-CREATE TABLE public.game_instance
-(
-	id SERIAL PRIMARY KEY NOT NULL,
-	login_id INT REFERENCES login(id) NOT NULL,
-	page_id INT REFERENCES page(id) NOT NULL,
-	player_id INT REFERENCES player(id) NOT NULL
-);
-
 
 CREATE USER weblogin WITH PASSWORD 'elrathsJourney';
 GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO weblogin;
+
+INSERT INTO inventory(item_name, health_manip, magic_manip, attack_manip, defence_manip, description) 
+VALUES('One-Handed Broad Sword', 20, 0, 50, 25, 'A very sturdy sword used by many travelers for safety.');
+
+INSERT INTO inventory(item_name, health_manip, magic_manip, attack_manip, defence_manip, description) 
+VALUES('Steel Shield', 30, 0, 25, 50, 'A strong shield meant to protect the user.');
+
+INSERT INTO inventory(item_name, health_manip, magic_manip, attack_manip, defence_manip, description) 
+VALUES('Steel Helm', 20, 0, 0, 50, 'A strong piece of armor meant to protect the user.');
+
+INSERT INTO inventory(item_name, health_manip, magic_manip, attack_manip, defence_manip, description) 
+VALUES('Steel Chestplate', 50, 0, 0, 100, 'A strong piece of armor meant to protect the user.');
+
+INSERT INTO inventory(item_name, health_manip, magic_manip, attack_manip, defence_manip, description) 
+VALUES('Steel Leggings', 25, 0, 0, 50, 'A strong piece of armor meant to protect the user.');
+
+INSERT INTO inventory(item_name, health_manip, magic_manip, attack_manip, defence_manip, description) 
+VALUES('Steel Boots', 20, 0, 0, 25, 'A strong piece of armor meant to protect the user.');
+
+INSERT INTO inventory(item_name, health_manip, magic_manip, attack_manip, defence_manip, description) 
+VALUES('Mysterious Amulet', 0, 0, 0, 0, 'Given to you by that old lady, and told to break it only at a time of dire need.');
