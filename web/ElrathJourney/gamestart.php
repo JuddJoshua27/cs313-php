@@ -10,6 +10,27 @@ $statement->execute();
 
 $last_id = $comm->lastInsertId();
 
-echo $last_id;
+$statement = $comm->prepare("INSERT INTO player_inventory(player_id, inventory_id) VALUES($last_id, 1)");
+$statement->execute();
+
+$statement = $comm->prepare("INSERT INTO player_inventory(player_id, inventory_id) VALUES($last_id, 2)");
+$statement->execute();
+
+$statement = $comm->prepare("INSERT INTO player_inventory(player_id, inventory_id) VALUES($last_id, 3)");
+$statement->execute();
+
+$statement = $comm->prepare("INSERT INTO player_inventory(player_id, inventory_id) VALUES($last_id, 4)");
+$statement->execute();
+
+$statement = $comm->prepare("INSERT INTO player_inventory(player_id, inventory_id) VALUES($last_id, 5)");
+$statement->execute();
+
+$statement = $comm->prepare("INSERT INTO player_inventory(player_id, inventory_id) VALUES($last_id, 6)");
+$statement->execute();
+
+$statement = $comm->prepare("INSERT INTO player_inventory(player_id, inventory_id) VALUES($last_id, 7)");
+$statement->execute();
+
+echo "inventory populated";
 
 ?> 
