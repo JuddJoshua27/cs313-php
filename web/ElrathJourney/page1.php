@@ -1,4 +1,7 @@
-
+<?php
+require dbcontrol.php;
+$comm = get_db();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,8 +19,8 @@
         </style>
     </head>
     <body>
-        <p style="border:3px solid white;color:white; margin-right 60%;display:block;">
-           asdfasdfasdasdfasdfas dfasdf asdkfjha soidufn lakjbsdfguia sjkdbfli basdbfi abfidgjabsdglijbaslkjdbglkj abdfjkbg alkdfjbgiajdbflghalijdfnglkjabdfiu gbajifndgibajkdfkbgi abofdijgnklajdfgjbajkdfgihadfngljbadfbgkabldfjigjabdfghajlkd fngjlhialdfnglkja bdfjkgnajkbfgj nakjbfgiaberjbjabfkvbadlicgbiajbgliafdignadlkjfbgiuasdglhasildfjgnlajdfhgibadfljkghijladflgjkha  ashdgjnal jsdhfljkasnd fhsadkj lfsdahfjkasdnfi uhasdnf uliasd hf asldf lasd fjlkasjkdfh lashdfjaidbguoenbrgbqiurbgilhaebfviber9uqrg laskjdbfiuewbfijbibui
-        </p> 
+        <h3 style="border:3px solid white;color:white;">
+            this is where the stats are going to go!
+        </h3> 
     </body>
 </html>

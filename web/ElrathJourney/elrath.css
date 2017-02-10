@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5
+h1, h2, h4, h5
 {
     background-color:crimson;
     color: darkgrey;
@@ -6,7 +6,16 @@ h1, h2, h3, h4, h5
     font-style: oblique;
     font-family: fantasy;
 }
-
+h3
+{
+    background-color: brown;
+    opacity: .3;
+    border-color: darkgrey;
+    border-top-style: ridge;
+    border-collapse: collapse;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
 .button
 {
     background-color:black;
