@@ -31,7 +31,7 @@ $comm = get_db();
         {
             $user_name = $row["user_name"];
         }
-        
+        /*
         $statement = $comm->prepare("SELECT * FROM player WHERE login_id = $userID");
         $statement->execute();
         
@@ -42,7 +42,7 @@ $comm = get_db();
             echo "Attack:" . $row["attack"] . " | Defence:" . $row["defence"] . "<br>";
             echo "Gold: " . $row["gold"];
             echo "</h3>"
-        }
+        }*/
         ?>
     </body>
 </html>
