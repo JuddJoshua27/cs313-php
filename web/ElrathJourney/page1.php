@@ -20,7 +20,6 @@ $comm = get_db();
             {
                 color:white;
                 background-color: brown;
-                opacity: .5;
                 text-align: center;
                 border-bottom: 4px solid;
                 border-bottom-color: darkgrey;
