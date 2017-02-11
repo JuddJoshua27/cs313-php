@@ -23,12 +23,14 @@ $comm = get_db();
        <?php
         session_start();
         $userID = $_SESSION["userID"];
+        
         $statement = $comm->prepare("SELECT * FROM login WHERE id = $userID");
         $statement->execute();
         $user_name = null;
         
         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
         {
+            echo "<h3>" . $row["user_name"] . "</h3>";
             $user_name = $row["user_name"];
         }
         echo "<h3>user name is: " . $user_name . "</h3>";
