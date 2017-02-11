@@ -38,12 +38,12 @@ $comm = get_db();
         $statement->execute();
         echo "<h3>successfully queried</h3>";
         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-        {/*
+        {
             echo "<h3>";
             echo $user_name . "<br>HP:" . $row["health"] . " | MP:" . $row["magic"]"<br>";
             echo "Attack:" . $row["attack"] . " | Defence:" . $row["defence"] . "<br>";
             echo "Gold: " . $row["gold"];
-            echo "</h3>";*/
+            echo "</h3>";
         }
         ?>
     </body>
