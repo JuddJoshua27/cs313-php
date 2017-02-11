@@ -113,7 +113,7 @@ $comm = get_db();
                 <th>Item Description</th>
             </tr>        
         <?php
-        $statement = $comm->prepare("SELECT * FROM inventroy WHERE player_id = $player_id");
+        $statement = $comm->prepare("SELECT * FROM inventory i INNER JOIN player_inventory pi ON i.id = pi.inventory_id WHERE pi.player_id = $player_id;");
         $statement->execute();
             
         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
