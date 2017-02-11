@@ -32,26 +32,44 @@ $comm = get_db();
         {
             $user_name = $row["user_name"];
         }
-        echo "<h3>user name is: " . $user_name . "</h3>";
-        echo "<h3>user id is: " . $userID . "</h3>";
         $statement = $comm->prepare("SELECT * FROM player WHERE login_id = $userID");
         $statement->execute();
-        echo "<h3>successfully queried</h3>";
         
+        $player_id= null;
         $health = null;
         $magic = null;
         $attack = null;
         $defence = null;
+        $gold = null;
         
         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
         {
+            $player_id = $row["id"];
             $health = $row["health"];
             $magic = $row["magic"];
             $attack = $row["attack"];
             $defence = $row["defence"];
+            $gold = $row["gold"];
         }
         
-        echo "<h3>" . $health . " : " . $magic . " : " . $attack . " : " . $defence . "</h3>";
+        $statement = $comm->prepare("SELECT * FROM inventory i INNER JOIN player_inventory pi ON i.id = pi.inventory_id WHERE pi.player_id = $player_id; ");
+        $statement->execute();
+        
+        $health_manip = null;
+        $magic_manip = null;
+        $attack_manip = null;
+        $defence_manip = null;
+        
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+        {
+           $health_manip += $row["health_manip"];
+            $magic_manip += $row["magic_manip"];
+            $attack_manip += $row["attack_manip"];
+            $defence_manip += $row["defence_manip"];
+        }
+        
+        echo "<h3>" . $health_manip . " : " . $magic_manip . " : " . $attack_manip . " : " . $defence_manip . "</h3>";
+        echo "<h3>" . $health . " : " . $magic . " : " . $attack . " : " . $defence . $gold . "</h3>";
         ?>
     </body>
 </html>
