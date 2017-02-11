@@ -28,9 +28,9 @@ $comm = get_db();
                 border-top: 1.5px solid;
                 border-top-color: darkgrey;
                 border-top-right-radius: 100px;
-                padding-left: 60px;
+                padding-left: 70px;
                 padding-right: 15px;
-                margin-right:75%;
+                margin-right:77%;
             }
         
         </style>
