@@ -148,15 +148,15 @@ $comm = get_db();
         
         <!--                        buttons for choices                              --->
         <a href="">
-            <input type="button" value="">
+            <input type="button" value="test 1">
         </a>
         
         <a href="">
-            <input type="button" value="">
+            <input type="button" value="test 2">
         </a>
         
         <a href="">
-            <input type="button" value="">
+            <input type="button" value="test 3">
         </a>
         
     </body>
