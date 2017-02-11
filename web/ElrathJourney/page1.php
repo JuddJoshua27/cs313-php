@@ -74,9 +74,10 @@ $comm = get_db();
         $total_defence = $defence + $defence_manip;
             
         
-        echo "<h3>" . $health_manip . " : " . $magic_manip . " : " . $attack_manip . " : " . $defence_manip . "</h3>";
-        echo "<h3>" . $health . " : " . $magic . " : " . $attack . " : " . $defence . " : " . $gold . "</h3>";
-        echo "<h3>" . $total_health . " : " . $total_magic . " : " . $total_attack . " : " . $total_defence . " : " . $gold . "</h3>";
+        echo "<h3>" . $user_name . "<br>" . 
+            "HP:" . $total_health . " | MP:" . $total_magic . "<br>" .
+            "Attack:" . $total_attack . " | Defence:" . $total_defence .  "<br>" .
+            "Gold:" . $gold . "</h3>";
         ?>
     </body>
 </html>
