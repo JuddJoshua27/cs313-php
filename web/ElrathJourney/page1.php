@@ -51,7 +51,7 @@ $comm = get_db();
             $defence = $row["defence"];
         }
         
-        echo $health . " : " . $magic . " : " . $attack . " : " . $defence;
+        echo "<h3>" . $health . " : " . $magic . " : " . $attack . " : " . $defence . "</h3>";
         ?>
     </body>
 </html>
