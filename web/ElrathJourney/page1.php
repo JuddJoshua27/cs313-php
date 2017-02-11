@@ -63,6 +63,7 @@ $comm = get_db();
             a
             {
                 display:inline-block;
+                align-content: center;
             }
         </style>
     </head>
