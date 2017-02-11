@@ -42,6 +42,20 @@ $comm = get_db();
                 border-top-color: darkgrey;
                 margin-right:76%;
             }
+            tr, th
+            {
+                border-bottom: 4px solid;
+                border-bottom-color: darkgrey;
+                border-top: 1.5px solid;
+                border-top-color: darkgrey;
+            }
+            td
+            {
+                border-left: 4px solid;
+                border-left: darkgrey;
+                border-right: 1.5px solid;
+                border-right-color: darkgrey;
+            }
         </style>
     </head>
     <body>
