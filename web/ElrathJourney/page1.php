@@ -18,7 +18,8 @@ $comm = get_db();
             }
             h3
             {
-                background-color: white;
+                color:white;
+                background-color: brown;
                 opacity: .5;
                 text-align: left;
                 border-bottom: 4px solid;
@@ -27,8 +28,9 @@ $comm = get_db();
                 border-top: 1.5px solid;
                 border-top-color: darkgrey;
                 border-top-right-radius: 100px;
-                padding-left: 20px;
+                padding-left: 40px;
                 padding-right: 20px;
+                margin-right:40%;
             }
         
         </style>
