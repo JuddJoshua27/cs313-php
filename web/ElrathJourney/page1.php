@@ -37,10 +37,21 @@ $comm = get_db();
         $statement = $comm->prepare("SELECT * FROM player WHERE login_id = $userID");
         $statement->execute();
         echo "<h3>successfully queried</h3>";
+        
+        $health = null;
+        $magic = null;
+        $attack = null;
+        $defence = null;
+        
         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
         {
-            echo "<h3>" . $user_name . "<br>HP:" . $row["health"] . " | MP:" . $row["magic"]"<br>" . "Attack:" . $row["attack"] . " | Defence:" . $row["defence"] . "<br>" . "Gold: " . $row["gold"] . "</h3>";
+            $health = $row["health"];
+            $magic = $row["magic"];
+            $attack = $row["attack"];
+            $defence = $row["defence"];
         }
+        
+        echo $health . " : " . $magic . " : " . $attack . " : " . $defence;
         ?>
     </body>
 </html>
