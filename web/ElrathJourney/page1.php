@@ -32,7 +32,7 @@ $comm = get_db();
             $user_name = $row["user_name"];
         }
         echo "<h3>user name is: " . $user_name . "</h3>";
-        $statement = $comm->prepare("SELECT * FROM player WHERE login_id = $userID");
+        $statement = $comm->prepare("SELECT * FROM player WHERE login_id = '$userID'");
         $statement->execute();
         echo "<h3successfully queried</h3>";
         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
