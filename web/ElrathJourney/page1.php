@@ -75,9 +75,9 @@ $comm = get_db();
             
         
         echo "<h3>" . $user_name . "<br>" . 
-            "HP:" . $total_health . " | MP:" . $total_magic . "<br>" .
-            "Attack:" . $total_attack . " | Defence:" . $total_defence .  "<br>" .
-            "Gold:" . $gold . "</h3>";
+            "HP: " . $total_health . "  |  MP: " . $total_magic . "<br>" .
+            "Attack: " . $total_attack . " |  Defence: " . $total_defence .  "<br>" .
+            "Gold: " . $gold . "</h3>";
         ?>
     </body>
 </html>
