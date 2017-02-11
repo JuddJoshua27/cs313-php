@@ -30,11 +30,10 @@ $comm = get_db();
         
         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
         {
-            echo "<h3>" . $row["user_name"] . "</h3>";
             $user_name = $row["user_name"];
         }
         echo "<h3>user name is: " . $user_name . "</h3>";
-        
+        echo "<h3>user id is: " . $userID . "</h3>";
         $statement = $comm->prepare("SELECT * FROM player WHERE login_id = $userID");
         $statement->execute();
         echo "<h3successfully queried</h3>";
