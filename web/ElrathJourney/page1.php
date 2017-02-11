@@ -60,6 +60,11 @@ $comm = get_db();
                 border-right: 1.5px solid;
                 border-right-color: darkgrey;
             }
+            a
+            {
+                display:inline-block;
+                margin: auto;
+            }
         </style>
     </head>
     <body>
@@ -140,5 +145,19 @@ $comm = get_db();
         }
         ?>
         </table>
+        
+        <!--                        buttons for choices                              --->
+        <a href="">
+            <input type="button" value="">
+        </a>
+        
+        <a href="">
+            <input type="button" value="">
+        </a>
+        
+        <a href="">
+            <input type="button" value="">
+        </a>
+        
     </body>
 </html>
