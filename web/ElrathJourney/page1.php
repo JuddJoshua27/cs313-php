@@ -51,6 +51,10 @@ $comm = get_db();
             }
             td
             {
+                border-bottom: 1.5px solid;
+                border-bottom-color: darkgrey;
+                border-top: 1.5px solid;
+                border-top-color: darkgrey;
                 border-left: 4px solid;
                 border-left: darkgrey;
                 border-right: 1.5px solid;
