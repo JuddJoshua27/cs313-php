@@ -16,6 +16,20 @@ $comm = get_db();
                 background-position:50% 25%;
                 background-color: black;
             }
+            h3
+            {
+                background-color: white;
+                opacity: .5;
+                text-align: left;
+                border-bottom: 4px solid;
+                border-bottom-color: darkgrey;
+                border-bottom-left-radius: 100px;
+                border-top: 1.5px solid;
+                border-top-color: darkgrey;
+                border-top-right-radius: 100px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
         
         </style>
     </head>
