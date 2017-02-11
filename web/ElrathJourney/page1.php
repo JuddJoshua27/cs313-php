@@ -31,7 +31,17 @@ $comm = get_db();
                 padding-right: 20px;
                 margin-right:76%;
             }
-        
+            table
+            {
+                color: white;
+                background-color: brown;
+                text-align: center;
+                border-bottom: 4px solid;
+                border-bottom-color: darkgrey;
+                border-top: 1.5px solid;
+                border-top-color: darkgrey;
+                margin-right:76%;
+            }
         </style>
     </head>
     <body>
@@ -70,6 +80,8 @@ $comm = get_db();
         $statement = $comm->prepare("SELECT * FROM inventory i INNER JOIN player_inventory pi ON i.id = pi.inventory_id WHERE pi.player_id = $player_id; ");
         $statement->execute();
         
+        $item_name = null;
+        $description = null;
         $health_manip = null;
         $magic_manip = null;
         $attack_manip = null;
@@ -77,7 +89,7 @@ $comm = get_db();
         
         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
         {
-           $health_manip += $row["health_manip"];
+            $health_manip += $row["health_manip"];
             $magic_manip += $row["magic_manip"];
             $attack_manip += $row["attack_manip"];
             $defence_manip += $row["defence_manip"];
@@ -94,5 +106,21 @@ $comm = get_db();
             "Attack: " . $total_attack . " |  Defence: " . $total_defence .  "<br>" .
             "Gold: " . $gold . "</h3>";
         ?>
+        
+        <table>
+            <tr>
+                <th>Item Name</th>
+                <th>Item Description</th>
+            </tr>        
+        <?php
+        $statement = $comm->prepare("SELECT * FROM inventroy WHERE player_id = $player_id");
+        $statement->execute();
+            
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+        {
+            echo "<tr>" . "<td>" . $row["item_name"] . "</td>" . "<td>" . $row["description"] . "</td>" . "</tr>";
+        }
+        ?>
+        </table>
     </body>
 </html>
