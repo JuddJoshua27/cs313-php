@@ -21,7 +21,7 @@ $comm = get_db();
                 color:white;
                 background-color: brown;
                 opacity: .5;
-                text-align: left;
+                text-align: center;
                 border-bottom: 4px solid;
                 border-bottom-color: darkgrey;
                 border-bottom-left-radius: 100px;
@@ -30,7 +30,7 @@ $comm = get_db();
                 border-top-right-radius: 100px;
                 padding-left: 70px;
                 padding-right: 15px;
-                margin-right:77%;
+                margin-right:76%;
             }
         
         </style>
