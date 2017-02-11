@@ -69,7 +69,7 @@ $comm = get_db();
         }
         
         echo "<h3>" . $health_manip . " : " . $magic_manip . " : " . $attack_manip . " : " . $defence_manip . "</h3>";
-        echo "<h3>" . $health . " : " . $magic . " : " . $attack . " : " . $defence . $gold . "</h3>";
+        echo "<h3>" . $health . " : " . $magic . " : " . $attack . " : " . $defence . " : " . $gold . "</h3>";
         ?>
     </body>
 </html>
