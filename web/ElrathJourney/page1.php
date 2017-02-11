@@ -39,11 +39,7 @@ $comm = get_db();
         echo "<h3>successfully queried</h3>";
         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
         {
-            echo "<h3>";
-            echo $user_name . "<br>HP:" . $row["health"] . " | MP:" . $row["magic"]"<br>";
-            echo "Attack:" . $row["attack"] . " | Defence:" . $row["defence"] . "<br>";
-            echo "Gold: " . $row["gold"];
-            echo "</h3>";
+            echo "<h3>" . $user_name . "<br>HP:" . $row["health"] . " | MP:" . $row["magic"]"<br>" . "Attack:" . $row["attack"] . " | Defence:" . $row["defence"] . "<br>" . "Gold: " . $row["gold"] . "</h3>";
         }
         ?>
     </body>
