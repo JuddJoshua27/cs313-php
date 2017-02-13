@@ -54,3 +54,8 @@ VALUES('Steel Boots', 20, 0, 0, 25, 'A strong piece of armor meant to protect th
 
 INSERT INTO inventory(item_name, health_manip, magic_manip, attack_manip, defence_manip, description) 
 VALUES('Mysterious Amulet', 0, 0, 0, 0, 'Given to you by that old lady, and told to break it only at a time of dire need.');
+
+
+SELECT * FROM inventory i
+	INNER JOIN player_inventory pi ON i.id = pi.inventory_id
+	WHERE pi.player_id = 3;
