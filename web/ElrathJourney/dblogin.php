@@ -23,7 +23,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
         switch ($row["page_number"])
         {
             case 1:
-                header("Location: page1.php");
+                header("Location: pages/page1.php");
                 die("Redirected to...");
                 break;
             default:
