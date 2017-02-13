@@ -143,7 +143,7 @@ $comm = get_db();
         $total_defence = $defence + $defence_manip;
             
         
-        echo "<h3 class="iblock">" . $user_name . "<br>" . 
+        echo "<h3 class='iblock'>" . $user_name . "<br>" . 
             "HP: " . $total_health . "  |  MP: " . $total_magic . "<br>" .
             "Attack: " . $total_attack . " |  Defence: " . $total_defence .  "<br>" .
             "Gold: " . $gold . "</h3>";
