@@ -102,18 +102,14 @@ $comm = get_db();
     </head>
     <body>
         
-        <h3 class="anotherh3">You come upon a divide in the hall, it splits in 3 directions. One leads to the left, the other forward, and the other right. No destinctions line the walls to determine whats down each corridor. You must choose where you go.</h3>
+        <h3 class="anotherh3">As you open the chest, the brilliancy of the treasure takes your breath away for a moment. Nestled at the bottom of the chest are the most beautiful pants you have ever seen. The brightest of white dawns your eyes as you lift these Divine Pants off of the wood. As you slip into them, you feel energized. It is as if Heaven itself is giving you the strength to fight the evil buried within these halls. Replacing your Steel Leggings over your new pants, you turn and go back to the split in the hall and reorient yourself as you came upon the intersection so you do not get lost or confused. The other two choices are yours to take.</h3>
         <div class="center">
-            <a href="page2.php">
-                <h4>Go to the left</h4>
+            <a href="">
+                <h4>Go strait</h4>
             </a>
         
             <a href="">
                 <h4>Go to the right</h4>
-            </a>
-        
-            <a href="">
-                <h4>Go forward</h4>
             </a>
         </div>
        <?php
@@ -183,6 +179,9 @@ $comm = get_db();
                 <th>Item Description</th>
             </tr>        
         <?php
+        $statement = $comm->prepare("INSERT INTO player_inventory(player_id, inventory_id) VALUES($player_id, 8)");
+        $statement->execute();
+            
         $statement = $comm->prepare("SELECT * FROM inventory i INNER JOIN player_inventory pi ON i.id = pi.inventory_id WHERE pi.player_id = $player_id;");
         $statement->execute();
             

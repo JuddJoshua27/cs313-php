@@ -102,18 +102,18 @@ $comm = get_db();
     </head>
     <body>
         
-        <h3 class="anotherh3">You come upon a divide in the hall, it splits in 3 directions. One leads to the left, the other forward, and the other right. No destinctions line the walls to determine whats down each corridor. You must choose where you go.</h3>
+        <h3 class="anotherh3">You come upon a divide in the hall, it splits in 3 directions. One leads to the left the other forward the other right. No destinctions  line the walls to determine whats down each corridor. You must choose where you go.</h3>
         <div class="center">
-            <a href="page2.php">
-                <h4>Go to the left</h4>
+            <a href="">
+                <h4>test 1</h4>
             </a>
         
             <a href="">
-                <h4>Go to the right</h4>
+                <h4>test 2</h4>
             </a>
         
             <a href="">
-                <h4>Go forward</h4>
+                <h4>test 3</h4>
             </a>
         </div>
        <?php

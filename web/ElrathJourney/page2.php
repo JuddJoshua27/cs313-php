@@ -11,7 +11,7 @@ $comm = get_db();
         <style>
             body
             {
-                background-image: url(pics/Hallway.jpg);
+                background-image: url(pics/HallwayWithChest.jpg);
                 background-repeat:no-repeat;
                 background-position:50% 25%;
                 background-color: black;
@@ -102,19 +102,16 @@ $comm = get_db();
     </head>
     <body>
         
-        <h3 class="anotherh3">You come upon a divide in the hall, it splits in 3 directions. One leads to the left, the other forward, and the other right. No destinctions line the walls to determine whats down each corridor. You must choose where you go.</h3>
+        <h3 class="anotherh3">The Hallway ends in a dead end but on the ground lies a tarnished chest. It seems as if it has laid there for ages, yet you feel a distinct warmth emanating from inside. A feeling of comfort comes over you.</h3>
         <div class="center">
-            <a href="page2.php">
-                <h4>Go to the left</h4>
+            <a href="page3.php">
+                <h4>Open Chest</h4>
             </a>
         
-            <a href="">
-                <h4>Go to the right</h4>
+            <a href="page4.php.">
+                <h4>Leave</h4>
             </a>
         
-            <a href="">
-                <h4>Go forward</h4>
-            </a>
         </div>
        <?php
         session_start();
