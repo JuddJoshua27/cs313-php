@@ -85,7 +85,7 @@ $comm = get_db();
         </style>
     </head>
     <body>
-       <?php/*
+       <?php
         session_start();
         $userID = $_SESSION["userID"];
         
@@ -144,7 +144,7 @@ $comm = get_db();
         echo "<h3>" . $user_name . "<br>" . 
             "HP: " . $total_health . "  |  MP: " . $total_magic . "<br>" .
             "Attack: " . $total_attack . " |  Defence: " . $total_defence .  "<br>" .
-            "Gold: " . $gold . "</h3>";*/
+            "Gold: " . $gold . "</h3>";
         ?>
         
         <h3 class="anotherh3">this is just filler text to see if this will actually work. i am hoping that it will work so that i dont have to fanagle something to work. its really anoying when things dont work the first time, although, that is rare as a programmer to have code work the first time. really annoying. i misspelled annoying wrong earlier in this paragraph, can you tell me where?</h3>
@@ -153,14 +153,14 @@ $comm = get_db();
                 <th>Item Name</th>
                 <th>Item Description</th>
             </tr>        
-        <?php/*
+        <?php
         $statement = $comm->prepare("SELECT * FROM inventory i INNER JOIN player_inventory pi ON i.id = pi.inventory_id WHERE pi.player_id = $player_id;");
         $statement->execute();
             
         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
         {
             echo "<tr>" . "<td>" . $row["item_name"] . "</td>" . "<td>" . $row["description"] . "</td>" . "</tr>";
-        }*/
+        }
         ?>
         </table>
         
