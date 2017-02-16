@@ -44,6 +44,7 @@ $comm = get_db();
                 border-top-right-radius: 100px;
                 padding-left: 20px;
                 padding-right: 20px;
+                margin:auto;
             }
             h4
             {
