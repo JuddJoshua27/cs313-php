@@ -91,7 +91,8 @@ $comm = get_db();
             a
             {
                 display:inline-block;
-                
+                margin-left: auto;
+                margin-right: auto;
             }
         </style>
     </head>
