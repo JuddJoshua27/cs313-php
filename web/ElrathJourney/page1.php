@@ -31,6 +31,20 @@ $comm = get_db();
                 padding-right: 20px;
                 margin-right:76%;
             }
+            .anotherh3
+            {
+                color:white;
+                background-color: brown;
+                text-align: center;
+                border-bottom: 4px solid;
+                border-bottom-color: darkgrey;
+                border-bottom-left-radius: 100px;
+                border-top: 1.5px solid;
+                border-top-color: darkgrey;
+                border-top-right-radius: 100px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
             h4
             {
                 background-color:black;
@@ -81,6 +95,9 @@ $comm = get_db();
         </style>
     </head>
     <body>
+        
+        <h3 class="anotherh3">this is just filler text to see if this will actually work. i am hoping that it will work so that i dont have to fanagle something to work. its really anoying when things dont work the first time, although, that is rare as a programmer to have code work the first time. really annoying. i misspelled annoying wrong earlier in this paragraph, can you tell me where?</h3>
+        
        <?php
         session_start();
         $userID = $_SESSION["userID"];
@@ -142,8 +159,6 @@ $comm = get_db();
             "Attack: " . $total_attack . " |  Defence: " . $total_defence .  "<br>" .
             "Gold: " . $gold . "</h3>";
         ?>
-        <!---
-        <h3 class="anotherh3">this is just filler text to see if this will actually work. i am hoping that it will work so that i dont have to fanagle something to work. its really anoying when things dont work the first time, although, that is rare as a programmer to have code work the first time. really annoying. i misspelled annoying wrong earlier in this paragraph, can you tell me where?</h3>-->
         <table>
             <tr>
                 <th>Item Name</th>
@@ -170,7 +185,7 @@ $comm = get_db();
         </a>
         
         <a href="">
-            <h4>tes</h4>
+            <h4>test 3</h4>
         </a>
         
     </body>
