@@ -15,8 +15,6 @@ $comm = get_db();
                 background-repeat:no-repeat;
                 background-position:50% 25%;
                 background-color: black;
-                width: 640px;
-                height: 960px;
             }
             h3
             {
