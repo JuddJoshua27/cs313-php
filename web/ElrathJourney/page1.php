@@ -165,15 +165,15 @@ $comm = get_db();
         
         
         <a href="">
-            <input type="button" value="test 1">
+            <h4>test 1</h4>
         </a>
         
         <a href="">
-            <input type="button" value="test 2">
+            <h4>test 2</h4>
         </a>
         
         <a href="">
-            <input type="button" value="test 3">
+            <h4>test 3</h4>
         </a>
         
     </body>
