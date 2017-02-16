@@ -108,7 +108,7 @@ $comm = get_db();
                 <h4>Open Chest</h4>
             </a>
         
-            <a href="page4.php.">
+            <a href="page4.php">
                 <h4>Leave</h4>
             </a>
         
@@ -187,6 +187,9 @@ $comm = get_db();
         {
             echo "<tr>" . "<td>" . $row["item_name"] . "</td>" . "<td>" . $row["description"] . "</td>" . "</tr>";
         }
+            
+            $statement = $comm->prepare("UPDATE login SET page_number = 2 WHERE id = $userID");
+            $statement->execute();
         ?>
         </table>        
     </body>
