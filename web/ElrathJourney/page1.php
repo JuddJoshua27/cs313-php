@@ -91,27 +91,31 @@ $comm = get_db();
             a
             {
                 display:inline-block;
+            }
+            .center
+            {
                 margin-left: auto;
                 margin-right: auto;
+                display:block;
             }
         </style>
     </head>
     <body>
         
         <h3 class="anotherh3">this is just filler text to see if this will actually work. i am hoping that it will work so that i dont have to fanagle something to work. its really anoying when things dont work the first time, although, that is rare as a programmer to have code work the first time. really annoying. i misspelled annoying wrong earlier in this paragraph, can you tell me where?</h3>
+        <div class="center">
+            <a href="">
+                <h4>test 1</h4>
+            </a>
         
-        <a href="">
-            <h4>test 1</h4>
-        </a>
+            <a href="">
+                <h4>test 2</h4>
+            </a>
         
-        <a href="">
-            <h4>test 2</h4>
-        </a>
-        
-        <a href="">
-            <h4>test 3</h4>
-        </a>
-        
+            <a href="">
+                <h4>test 3</h4>
+            </a>
+        </div>
        <?php
         session_start();
         $userID = $_SESSION["userID"];
