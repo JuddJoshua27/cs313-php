@@ -144,6 +144,10 @@ $comm = get_db();
             $gold = $row["gold"];
         }
         
+        /****** this is where things need to go when adding to inventory***************************/
+        $statement = $comm->prepare("INSERT INTO player_inventory(player_id, inventory_id) VALUES($player_id, 8)");
+        $statement->execute();
+        
         $statement = $comm->prepare("SELECT * FROM inventory i INNER JOIN player_inventory pi ON i.id = pi.inventory_id WHERE pi.player_id = $player_id; ");
         $statement->execute();
         
@@ -179,8 +183,6 @@ $comm = get_db();
                 <th>Item Description</th>
             </tr>        
         <?php
-        $statement = $comm->prepare("INSERT INTO player_inventory(player_id, inventory_id) VALUES($player_id, 8)");
-        $statement->execute();
             
         $statement = $comm->prepare("SELECT * FROM inventory i INNER JOIN player_inventory pi ON i.id = pi.inventory_id WHERE pi.player_id = $player_id;");
         $statement->execute();
