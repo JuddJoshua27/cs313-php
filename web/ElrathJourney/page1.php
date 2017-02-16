@@ -146,8 +146,8 @@ $comm = get_db();
             "Attack: " . $total_attack . " |  Defence: " . $total_defence .  "<br>" .
             "Gold: " . $gold . "</h3>";
         ?>
-        
-        <h3 class="anotherh3">this is just filler text to see if this will actually work. i am hoping that it will work so that i dont have to fanagle something to work. its really anoying when things dont work the first time, although, that is rare as a programmer to have code work the first time. really annoying. i misspelled annoying wrong earlier in this paragraph, can you tell me where?</h3>
+        <!---
+        <h3 class="anotherh3">this is just filler text to see if this will actually work. i am hoping that it will work so that i dont have to fanagle something to work. its really anoying when things dont work the first time, although, that is rare as a programmer to have code work the first time. really annoying. i misspelled annoying wrong earlier in this paragraph, can you tell me where?</h3>-->
         <table>
             <tr>
                 <th>Item Name</th>
