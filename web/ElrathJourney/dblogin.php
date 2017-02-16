@@ -26,6 +26,18 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
                 header("Location: page1.php");
                 die("Redirected to...");
                 break;
+            case 2:
+                header("Location: page2.php");
+                die("Redirected to...");
+                break;
+            case 3:
+                header("Location: page3.php");
+                die("Redirected to...");
+                break;
+            case 4:
+                header("Location: page4.php");
+                die("Redirected to...");
+                break;
             default:
                 echo "This is awkward!";
         }

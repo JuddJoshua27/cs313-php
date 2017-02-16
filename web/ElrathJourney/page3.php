@@ -191,6 +191,9 @@ $comm = get_db();
         {
             echo "<tr>" . "<td>" . $row["item_name"] . "</td>" . "<td>" . $row["description"] . "</td>" . "</tr>";
         }
+            
+            $statement = $comm->prepare("UPDATE login SET page_number = 3 WHERE id = $userID");
+            $statement->execute();
         ?>
         </table>        
     </body>
