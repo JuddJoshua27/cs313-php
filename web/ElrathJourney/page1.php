@@ -31,21 +31,18 @@ $comm = get_db();
                 padding-right: 20px;
                 margin-right:76%;
             }
-            .anotherh3
+            h4
             {
+                background-color:black;
                 color:white;
-                background-color: brown;
-                text-align: center;
-                border-bottom: 4px solid;
-                border-bottom-color: darkgrey;
-                border-bottom-left-radius: 100px;
-                border-top: 1.5px solid;
-                border-top-color: darkgrey;
-                border-top-right-radius: 100px;
-                padding-left: 20px;
-                padding-right: 20px;
-                margin-left:76%;
-                display: inline-block;
+                border-bottom-left-radius: 30px;
+                border-top-right-radius: 30px;
+                border-color:white;
+                border-style: double;
+                padding:10px 30px 10px 30px;
+                margin-left: auto;
+                margin-right:auto;
+                cursor:pointer;
             }
             table
             {
@@ -173,7 +170,7 @@ $comm = get_db();
         </a>
         
         <a href="">
-            <h4>test 3</h4>
+            <h4>tes</h4>
         </a>
         
     </body>
