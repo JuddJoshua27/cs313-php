@@ -30,7 +30,6 @@ $comm = get_db();
                 padding-left: 20px;
                 padding-right: 20px;
                 margin-right:76%;
-                display:inline-block;
             }
             .anotherh3
             {
