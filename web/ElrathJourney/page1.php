@@ -158,6 +158,7 @@ $comm = get_db();
                 </div>
             <div class="col-xs-6"></div>
                 <div class="col-xs-3">
+                    <br>
                     <table>
                         <tr>
                             <th>Item Name</th>
