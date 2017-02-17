@@ -31,9 +31,11 @@ session_start();
                 <div class="col-xs-9">
                 </div>
                 <div class="col-xs-3">
+                    <p> Welcome
                     <?php
-                        echo "<p>Welcome $_SESSION['login_user']</p>";
+                        echo $_SESSION['login_user'];
                     ?>
+                    </p>
                 </div>
             </div>
         </div>

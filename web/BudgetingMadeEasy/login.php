@@ -29,8 +29,8 @@ echo $hash;
 // verify the password
 if (password_verify($password, $hash)) 
 {
-    /*
-    $_SESSION["login_user"] = $username;*/
+    
+    $_SESSION["login_user"] = $username;
     header('location: homepage.php');
     die();
 }
