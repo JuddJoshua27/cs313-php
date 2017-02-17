@@ -24,15 +24,13 @@ session_start();
                     <img style="width:100px; heigh:100px;" src="mvelopes-logo.jpg">
                 </div>
                 <div class="col-xs-2"></div>
-                <div class="jumbotron">
-                    <div class="col-xs-8">
-                        <h1>Budgeting Made Easy</h1>
-                    </div>
+                <div class="col-xs-8">
+                    <h1>Budgeting Made Easy</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-9">
-                    
+                    <h1>My Budget</h1>    
                 </div>
                 <div class="col-xs-2">
                     <p> Welcome
