@@ -14,15 +14,15 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div class="container">
+        
+        <div class="container-fluid">
             <div class="row"> 
                 <div class="col-xs-2">
-                    <img style="width:100px; heigh:100px;" src="mvelopes-logo.jpg">
+                    <img style="width:150px; heigh:150px;" src="mvelopes-logo.jpg">
                 </div>
                 <div class="col-xs-10">
-                    <h1>Test 2</h1>
+                    <h1>Budgeting Made Easy</h1>
                 </div>
-                
             </div>
         </div>
         
