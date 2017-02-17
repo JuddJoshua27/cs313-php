@@ -179,23 +179,23 @@ $comm = get_db();
         <br><br><br>
         <div class="container">
             <div class="row">
-                <div class="col-xs-5"></div>
-                <div class="col-xs-1">
+                <div class="col-xs-3"></div>
+                <div class="col-xs-2">
                     <a href="page2.php">
                         <p>Go to the left</p>
                     </a>
                 </div>
-                <div class="col-xs-1">
+                <div class="col-xs-2">
                     <a href="">
                         <p>Go to the right</p>
                     </a>
                 </div>
-                <div class="col-xs-1">
+                <div class="col-xs-2">
                     <a href="">
                         <p>Go forward</p>
                     </a>
                 </div>
-                <div class="col-xs-4"></div>
+                <div class="col-xs-3"></div>
             </div>
         </div>
         <h3>You come upon a divide in the hall, it splits in 3 directions. One leads to the left, the other forward, and the other right. No destinctions line the walls to determine whats down each corridor. You must choose where you go.</h3>
