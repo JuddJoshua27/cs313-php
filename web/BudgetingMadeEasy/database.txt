@@ -1,0 +1,38 @@
+CREATE TABLE public.budgetLogin
+(
+	id SERIAL PRIMARY KEY NOT NULL,
+	username VARCHAR(255) UNIQUE NOT NULL,
+	password VARCHAR(255) NOT NULL,
+	budget_id INT REFERENCES budget(id) 
+);
+CREATE TABLE public.budget
+(
+	id SERIAL PRIMARY KEY,
+	church_donations MONEY,
+	groceries MONEY,
+	rent_mortgage MONEY,
+	utilities MONEY,
+	transportation MONEY,
+	auto_insurance MONEY,
+	medical_insurance MONEY,
+	phone MONEY,
+	education MONEY,
+	medical MONEY,
+	other_expenses MONEY,
+	savings MONEY
+);
+CREATE TABLE public.expenses
+(
+	id SERIAL PRIMARY KEY,
+	purchase_info TEXT,
+	month VARCHAR(10),
+	day INT,
+	year INT,
+	category VARCHAR(50),
+	price MONEY
+);
+CREATE TABLE public.user_expenses
+(
+	login_id INT REFERENCES budgetLogin(id),
+	expenses_id INT REFERENCES expenses(id)
+);
