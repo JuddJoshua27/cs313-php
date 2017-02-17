@@ -144,7 +144,8 @@ $comm = get_db();
             $gold = $row["gold"];
         }
         
-        $statement = $comm->prepare("SELECT * FROM inventory i INNER JOIN player_inventory pi ON i.id = pi.inventory_id WHERE pi.player_id = $player_id; ");
+        /*************************** ADDING ITEMS TO INVENTORY********************************/
+        $statement = $comm->prepare("SELECT * FROM inventory WHERE player_id = $player_id");
         $statement->execute();
         
         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
