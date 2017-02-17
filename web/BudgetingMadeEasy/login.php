@@ -14,7 +14,7 @@ $password = htmlspecialchars($_POST['password']);
 
 
 $statement = $comm->prepare('SELECT * FROM budgetLogin WHERE username = :username');
-$statement->bindValue(':usermane', $username, PDO::PARAM_STR);
+$statement->bindValue(':username', $username, PDO::PARAM_STR);
 $statement->execute();
 
 $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
