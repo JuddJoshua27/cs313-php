@@ -3,11 +3,12 @@ h1,h3
     color: red;
     text-align: center;
 }
-h2, h5, h4
+h2, h5, h4, .newh3
 {
     color:white;
     text-align: center;
 }
+
 .border
 {
     border: 5px ridge yellow;
