@@ -181,7 +181,21 @@ $comm = get_db();
                 </div>
             <div class="col-xs-6"></div>
                 <div class="col-xs-3">
-                    <h3>You come upon a divide in the hall, it splits in 3 directions. One leads to the left, the other forward, and the other right. No destinctions line the walls to determine whats down each corridor. You must choose where you go.</h3>
+                    <table>
+                        <tr>
+                            <th>Item Name</th>
+                            <th>Item Description</th>
+                        </tr>        
+                            <?php
+                            $statement = $comm->prepare("SELECT * FROM inventory i INNER JOIN player_inventory pi ON i.id = pi.inventory_id WHERE pi.player_id = $player_id;");
+                            $statement->execute();
+            
+                            while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+                            {
+                                echo "<tr>" . "<td>" . $row["item_name"] . "</td>" . "<td>" . $row["description"] . "</td>" . "</tr>";
+                            }
+                            ?>
+                    </table>
                 </div>
             </div>
         </div>
@@ -201,6 +215,8 @@ $comm = get_db();
             echo "<tr>" . "<td>" . $row["item_name"] . "</td>" . "<td>" . $row["description"] . "</td>" . "</tr>";
         }
         ?>
-        </table>        
+        </table>
+        
+        <h3>You come upon a divide in the hall, it splits in 3 directions. One leads to the left, the other forward, and the other right. No destinctions line the walls to determine whats down each corridor. You must choose where you go.</h3>
     </body>
 </html>
