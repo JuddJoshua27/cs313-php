@@ -23,7 +23,7 @@ $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
 foreach ($rows as $row) {
     $hash = $row['password'];
 }
-
+/*
 // verify the password
 if (password_verify($password, $hash)) {
     $_SESSION["login_user"] = $username;
@@ -33,5 +33,5 @@ if (password_verify($password, $hash)) {
 else {
     header('location:index.php');
     die();
-}
+}*/
 ?>
