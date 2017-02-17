@@ -160,22 +160,24 @@ $comm = get_db();
         $total_magic = $magic + $magic_manip;
         $total_attack = $attack + $attack_manip;
         $total_defence = $defence + $defence_manip;
-            
-        echo "<div class="container-fluid">";
-            echo "<div class="row">";
-                echo "<div class="col-xs-3">";
+        ?>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-3">
+                    <?php
                     echo "<h3>" . $user_name . "<br>" . 
                         "HP: " . $total_health . "  |  MP: " . $total_magic . "<br>" .
                         "Attack: " . $total_attack . " |  Defence: " . $total_defence .  "<br>" .
                         "Gold: " . $gold . "</h3>";
-                echo "/div>";
-            echo "<div class="col-xs-6"></div>";
-                echo "<div class="col-xs-3">";
-                    echo "<h3 class="anotherh3">You come upon a divide in the hall, it splits in 3 directions. One leads to the left, the other forward, and the other right. No destinctions line the walls to determine whats down each corridor. You must choose where you go.</h3>";
-                echo "</div>";
-            echo "</div>";
-        echo "</div>;";
-        ?>
+                    ?>
+                </div>
+            <div class="col-xs-6"></div>
+                <div class="col-xs-3">
+                    <h3 class="anotherh3">You come upon a divide in the hall, it splits in 3 directions. One leads to the left, the other forward, and the other right. No destinctions line the walls to determine whats down each corridor. You must choose where you go.</h3>
+                </div>
+            </div>
+        </div>
         
         <div class="container-fluid">
             <div class="row">
