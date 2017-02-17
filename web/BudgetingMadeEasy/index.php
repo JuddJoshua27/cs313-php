@@ -25,7 +25,7 @@
                 </div>
             </div>
         </div>
-        <form>
+        <form method="post" action="login.php">
             <h1>Sign In</h1>
             <input type="text" placeholder="Login" name="login" required autofocus>
             <input type="password" placeholder="Password" name="password" required>
