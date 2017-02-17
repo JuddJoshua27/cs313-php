@@ -57,7 +57,6 @@ $comm = get_db();
                 border-bottom-color: darkgrey;
                 border-top: 1.5px solid;
                 border-top-color: darkgrey;
-                margin-right:76%;
             }
             tr, th
             {
