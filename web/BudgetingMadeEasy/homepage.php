@@ -23,8 +23,8 @@ session_start();
                 <div class="col-xs-2">
                     <img style="width:100px; heigh:100px;" src="mvelopes-logo.jpg">
                 </div>
-                <div class="col-xs-3"></div>
-                <div class="col-xs-7">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-8">
                     <h1>Budgeting Made Easy</h1>
                 </div>
             </div>
