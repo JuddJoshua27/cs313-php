@@ -19,13 +19,6 @@ $statement->execute();
 
 $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-// check if its empty
-if (empty($rows))
-{
-    header('location:login.php');
-    die();
-}
-
 // loop through and get the password of the user
 foreach ($rows as $row) {
     $hash = $row['password'];
@@ -38,7 +31,7 @@ if (password_verify($password, $hash)) {
     die();
 }
 else {
-    header('location:login.php');
+    header('location:index.php');
     die();
 }
 
