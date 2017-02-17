@@ -29,8 +29,7 @@ session_start();
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-9">
-                    <h1>My Budget</h1>    
+                <div class="col-xs-9">    
                 </div>
                 <div class="col-xs-2">
                     <p> Welcome
@@ -59,5 +58,15 @@ session_start();
                 </ul>
             </div>
         </nav>
+        <h1>My Budget</h1>
+        
+        <form action="createBudget.php" method="post">
+            <table>
+            
+            </table>    
+        </form>
+        
+        
+        
     </body>
 </html>
