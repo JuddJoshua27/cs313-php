@@ -31,8 +31,10 @@ if (password_verify($password, $hash)) {
     die();
 }
 else {
+    /*
     header('location:index.php');
-    die();
+    die();*/
+    echo "is it going here?";
 }
 
 
