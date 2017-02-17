@@ -90,6 +90,29 @@ $comm = get_db();
         </style>
     </head>
     <body>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4"></div>
+                <div class="col-xs-2">
+                    <a href="page2.php">
+                        <h4>Go to the left</h4>
+                    </a>
+                </div>
+                <div class="col-xs-2">
+                    <a href="">
+                        <h4>Go to the right</h4>
+                    </a>
+                </div>
+                <div class="col-xs-2">
+                    <a href="">
+                        <h4>Go forward</h4>
+                    </a>
+                </div>
+                <div class="col-xs-4"></div>
+            </div>
+        </div>
+        
        <?php
         session_start();
         $userID = $_SESSION["userID"];
@@ -163,27 +186,6 @@ $comm = get_db();
             </div>
         </div>
         
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-4"></div>
-                <div class="col-xs-2">
-                    <a href="page2.php">
-                        <h4>Go to the left</h4>
-                    </a>
-                </div>
-                <div class="col-xs-2">
-                    <a href="">
-                        <h4>Go to the right</h4>
-                    </a>
-                </div>
-                <div class="col-xs-2">
-                    <a href="">
-                        <h4>Go forward</h4>
-                    </a>
-                </div>
-                <div class="col-xs-4"></div>
-            </div>
-        </div>
         
         <table>
             <tr>
