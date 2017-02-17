@@ -168,7 +168,7 @@ $comm = get_db();
                         "HP: " . $total_health . "  |  MP: " . $total_magic . "<br>" .
                         "Attack: " . $total_attack . " |  Defence: " . $total_defence .  "<br>" .
                         "Gold: " . $gold . "</h3>";
-                echo "/div>"
+                echo "/div>";
             echo "<div class="col-xs-6"></div>";
                 echo "<div class="col-xs-3">";
                     echo "<h3 class="anotherh3">You come upon a divide in the hall, it splits in 3 directions. One leads to the left, the other forward, and the other right. No destinctions line the walls to determine whats down each corridor. You must choose where you go.</h3>";
