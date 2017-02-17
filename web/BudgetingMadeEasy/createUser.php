@@ -23,4 +23,6 @@ catch(PDOException $ex) {
     echo "Error connecting to Database. Details: $ex";
 }
 
+header("location: index.php");
+die();
 ?>
