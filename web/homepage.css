@@ -8,7 +8,7 @@ h2, h5, h4, .newh3
     color:white;
     text-align: center;
 }
-.newh3:hover
+h3:hover
 {
     color:yellow;
     text-shadow: 5px;
