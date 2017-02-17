@@ -90,28 +90,6 @@ $comm = get_db();
     </head>
     <body>
         
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-4"></div>
-                <div class="col-xs-2">
-                    <a href="page2.php">
-                        <h4>Go to the left</h4>
-                    </a>
-                </div>
-                <div class="col-xs-2">
-                    <a href="">
-                        <h4>Go to the right</h4>
-                    </a>
-                </div>
-                <div class="col-xs-2">
-                    <a href="">
-                        <h4>Go forward</h4>
-                    </a>
-                </div>
-                <div class="col-xs-4"></div>
-            </div>
-        </div>
-        
        <?php
         session_start();
         $userID = $_SESSION["userID"];
@@ -199,23 +177,28 @@ $comm = get_db();
             </div>
         </div>
         
-        
-        <table>
-            <tr>
-                <th>Item Name</th>
-                <th>Item Description</th>
-            </tr>        
-        <?php
-        $statement = $comm->prepare("SELECT * FROM inventory i INNER JOIN player_inventory pi ON i.id = pi.inventory_id WHERE pi.player_id = $player_id;");
-        $statement->execute();
-            
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-        {
-            echo "<tr>" . "<td>" . $row["item_name"] . "</td>" . "<td>" . $row["description"] . "</td>" . "</tr>";
-        }
-        ?>
-        </table>
-        
         <h3>You come upon a divide in the hall, it splits in 3 directions. One leads to the left, the other forward, and the other right. No destinctions line the walls to determine whats down each corridor. You must choose where you go.</h3>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4"></div>
+                <div class="col-xs-2">
+                    <a href="page2.php">
+                        <h4>Go to the left</h4>
+                    </a>
+                </div>
+                <div class="col-xs-2">
+                    <a href="">
+                        <h4>Go to the right</h4>
+                    </a>
+                </div>
+                <div class="col-xs-2">
+                    <a href="">
+                        <h4>Go forward</h4>
+                    </a>
+                </div>
+                <div class="col-xs-4"></div>
+            </div>
+        </div>
     </body>
 </html>
