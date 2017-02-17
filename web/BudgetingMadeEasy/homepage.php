@@ -28,16 +28,16 @@ session_start();
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-7">
+                <div class="col-xs-9">
                 </div>
-                <div class="col-xs-3">
+                <div class="col-xs-2">
                     <p> Welcome
                     <?php
                         echo $_SESSION['login_user'];
                     ?>
                     </p>
                 </div>
-                <div class="col-xs-2">
+                <div class="col-xs-1">
                     <a href="logout.php">Log Out</a>
                 </div>
             </div>
