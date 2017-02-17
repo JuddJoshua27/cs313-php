@@ -39,5 +39,20 @@ session_start();
                 </div>
             </div>
         </div>
+        
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Budgeting Made Easy</a>
+                </div>
+                <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Overview</a></li>
+                <li><a href="#">My Budget</a></li>
+                <li><a href="#">My Expenses</a></li>
+                <li><a href="#">Budget Report</a></li>
+                <li><a href="#">Reports per Category</a></li>
+                </ul>
+            </div>
+        </nav>
     </body>
 </html>
