@@ -49,8 +49,8 @@ session_start();
                     <a class="navbar-brand" href="#">Budgeting Made Easy</a>
                 </div>
                 <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="myBudget.php">My Budget</a></li>
+                <li><a href="homepage.php">Home</a></li>
+                <li class="active"><a href="#">My Budget</a></li>
                 <li><a href="#">My Expenses</a></li>
                 <li><a href="#">Overview</a></li>
                 <li><a href="#">Reports per Category</a></li>
