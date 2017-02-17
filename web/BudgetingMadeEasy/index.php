@@ -16,16 +16,15 @@
     <body>
         <div class="container">
             <div class="row"> 
-                <div class="col-xs-4">
-                    <h1>Test 1</h1>
+                <div class="col-xs-2">
+                    <img src="mvelopes-logo.jpg">
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-10">
                     <h1>Test 2</h1>
                 </div>
-                <div class="col-xs-4">
-                    <h1>Test3</h1>
-                </div>
+                
             </div>
         </div>
+        
     </body>
 </html>
