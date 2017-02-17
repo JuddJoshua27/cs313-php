@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row"> 
                 <div class="col-xs-2">
-                    <img src="mvelopes-logo.jpg">
+                    <img style="width:100px; heigh:100px;" src="mvelopes-logo.jpg">
                 </div>
                 <div class="col-xs-10">
                     <h1>Test 2</h1>
