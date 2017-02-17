@@ -30,7 +30,7 @@
             <input type="text" placeholder="Login" name="login" required autofocus>
             <input type="password" placeholder="Password" name="password" required>
             <input type="submit" name="submit" value="Login"><br>
-            <a href="signUp.php">Not Registered? Create an account</a>
+            <a href="signup.php">Not Registered? Create an account</a>
         </form>
     </body>
 </html>
