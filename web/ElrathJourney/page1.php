@@ -32,24 +32,8 @@ $comm = get_db();
                 border-top: 1.5px solid;
                 border-top-color: darkgrey;
                 border-top-right-radius: 100px;
-                padding-left: 20px;
-                padding-right: 20px;
-                margin-right:76%;
-            }
-            .anotherh3
-            {
-                color:white;
-                background-color: brown;
-                text-align: center;
-                border-bottom: 4px solid;
-                border-bottom-color: darkgrey;
-                border-bottom-left-radius: 100px;
-                border-top: 1.5px solid;
-                border-top-color: darkgrey;
-                border-top-right-radius: 100px;
-                padding-left: 20px;
-                padding-right: 20px;
-                margin:auto;
+                padding-left: 40px;
+                padding-right: 40px;
             }
             h4
             {
@@ -174,7 +158,7 @@ $comm = get_db();
                 </div>
             <div class="col-xs-6"></div>
                 <div class="col-xs-3">
-                    <h3 class="anotherh3">You come upon a divide in the hall, it splits in 3 directions. One leads to the left, the other forward, and the other right. No destinctions line the walls to determine whats down each corridor. You must choose where you go.</h3>
+                    <h3>You come upon a divide in the hall, it splits in 3 directions. One leads to the left, the other forward, and the other right. No destinctions line the walls to determine whats down each corridor. You must choose where you go.</h3>
                 </div>
             </div>
         </div>
