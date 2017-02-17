@@ -177,7 +177,7 @@ $comm = get_db();
                 </div>
             </div>
         </div>
-        <br><br><br><br><br>
+        <br><br>
         <div class="container">
             <div class="row">
                 <div class="col-xs-3"></div>
