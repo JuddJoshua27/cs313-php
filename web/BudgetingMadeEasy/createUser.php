@@ -8,7 +8,7 @@ $username = htmlspecialchars($_POST['username']);
 $password = htmlspecialchars($_POST['password']);
 
 $hash = password_hash($password, PASSWORD_DEFAULT);
-
+/*
 try{
     $sql = "INSERT INTO budgetLogin(username, password) VALUES(:username, :password)";
     
@@ -25,4 +25,5 @@ try{
 catch(PDOException $ex) {
     echo "Error connecting to Database. Details: $ex";
 }
+*/
 ?>
