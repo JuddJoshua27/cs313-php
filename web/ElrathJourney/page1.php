@@ -8,6 +8,11 @@ $comm = get_db();
     <head>
         <title>Elrath's Journey Homepage</title>
         <link rel="stylesheet" type="text/css"  href="elrath.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <style>
             body
             {
@@ -102,19 +107,26 @@ $comm = get_db();
     </head>
     <body>
         
-        <h3 class="anotherh3">You come upon a divide in the hall, it splits in 3 directions. One leads to the left, the other forward, and the other right. No destinctions line the walls to determine whats down each corridor. You must choose where you go.</h3>
-        <div class="center">
-            <a href="page2.php">
-                <h4>Go to the left</h4>
-            </a>
-        
-            <a href="">
-                <h4>Go to the right</h4>
-            </a>
-        
-            <a href="">
-                <h4>Go forward</h4>
-            </a>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-4"></div>
+                <div class="col-xs-2">
+                    <a href="page2.php">
+                        <h4>Go to the left</h4>
+                    </a>
+                </div>
+                <div class="col-xs-2">
+                    <a href="">
+                        <h4>Go to the right</h4>
+                    </a>
+                </div>
+                <div class="col-xs-2">
+                    <a href="">
+                        <h4>Go forward</h4>
+                    </a>
+                </div>
+                <div class="col-xs-4"></div>
+            </div>
         </div>
        <?php
         session_start();
@@ -171,11 +183,20 @@ $comm = get_db();
         $total_attack = $attack + $attack_manip;
         $total_defence = $defence + $defence_manip;
             
-        
-        echo "<h3>" . $user_name . "<br>" . 
-            "HP: " . $total_health . "  |  MP: " . $total_magic . "<br>" .
-            "Attack: " . $total_attack . " |  Defence: " . $total_defence .  "<br>" .
-            "Gold: " . $gold . "</h3>";
+        echo "<div class="container-fluid">";
+            echo "<div class="row">";
+                echo "<div class="col-xs-3">";
+                    echo "<h3>" . $user_name . "<br>" . 
+                        "HP: " . $total_health . "  |  MP: " . $total_magic . "<br>" .
+                        "Attack: " . $total_attack . " |  Defence: " . $total_defence .  "<br>" .
+                        "Gold: " . $gold . "</h3>";
+                echo "/div>"
+            echo "<div class="col-xs-6"></div>";
+                echo "<div class="col-xs-3">";
+                    echo "<h3 class="anotherh3">You come upon a divide in the hall, it splits in 3 directions. One leads to the left, the other forward, and the other right. No destinctions line the walls to determine whats down each corridor. You must choose where you go.</h3>";
+                echo "</div>";
+            echo "</div>";
+        echo "</div>;";
         ?>
         <table>
             <tr>
