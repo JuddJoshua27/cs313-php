@@ -4,9 +4,10 @@ session_start();
 require "dbcontrol.php";
 $comm = get_db();
 
-$username = $_POST["username"];
+$username = htmlspecialchars($_POST['username']);
+$password = htmlspecialchars($_POST['password']);
 
-$hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
+$hash = password_hash($password, PASSWORD_DEFAULT);
 
 try{
     $sql = "INSERT INTO budgetLogin(username, password) VALUES(:username, :password)";
