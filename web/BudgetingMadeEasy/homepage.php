@@ -28,7 +28,7 @@ session_start();
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-9">
+                <div class="col-xs-7">
                 </div>
                 <div class="col-xs-3">
                     <p> Welcome
@@ -36,6 +36,9 @@ session_start();
                         echo $_SESSION['login_user'];
                     ?>
                     </p>
+                </div>
+                <div class="col-xs-2">
+                    <a href="logout.php">Log Out</a>
                 </div>
             </div>
         </div>
