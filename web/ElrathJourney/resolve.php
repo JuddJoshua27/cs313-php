@@ -2,7 +2,7 @@
 require "dbcontrol.php"
 $comm = get_db();
 
-$statement = $comm->prepare("SELECT id FROM player WHERE login_id = $userID");
+$statement = $comm->prepare("SELECT * FROM player WHERE login_id = $userID");
         $statement->execute();
         
         $player_id= null;
@@ -12,6 +12,7 @@ $statement = $comm->prepare("SELECT id FROM player WHERE login_id = $userID");
             $player_id = $row["id"];
         }
 
+session_start();
 $user_id = $_SESSION("userID");
 $statement = $comm->prepare("DELETE FROM player_inventory WHERE player_id = $player_id");
 $statement->execute();
