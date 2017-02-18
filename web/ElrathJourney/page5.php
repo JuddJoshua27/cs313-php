@@ -17,6 +17,8 @@ $comm = get_db();
             body
             {
                 background-image: url(pics/BossRoom.jpg);
+                width:640px;
+                height: 960px;
                 background-repeat:no-repeat;
                 background-position:50% 25%;
                 background-color: black;
