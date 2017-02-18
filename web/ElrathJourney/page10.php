@@ -16,7 +16,7 @@ $comm = get_db();
         <style>
             body
             {
-                background-image: url(pics/Hallway.jpg);
+                background-image: url(pics/BossRoomWithBoss.jpg);
                 background-repeat:no-repeat;
                 background-position:50% 25%;
                 background-color: black;
@@ -151,7 +151,7 @@ $comm = get_db();
                 <div class="col-xs-3">
                     <?php
                     echo "<h3>" . $user_name . "<br>" . 
-                        "HP: " . $total_health . "  |  MP: " . $total_magic . "<br>" .
+                        "HP: " . $total_health - 100 . "  |  MP: " . $total_magic . "<br>" .
                         "Attack: " . $total_attack . " |  Defence: " . $total_defence .  "<br>" .
                         "Gold: " . $gold . "</h3>";
                     ?>
@@ -180,29 +180,23 @@ $comm = get_db();
         <br><br>
         <div class="container">
             <div class="row">
-                <div class="col-xs-3"></div>
+                <div class="col-xs-4"></div>
                 <div class="col-xs-2">
 <!---------------------------------------------------------------Choice 1------------->
-                    <a href="page2.php">
-                        <p>Go to the left</p>
+                    <a href="page9.php">
+                        <p>Stab</p>
                     </a>
                 </div>
                 <div class="col-xs-2">
 <!---------------------------------------------------------------Choice 2------------->
-                    <a href="">
-                        <p>Go to the right</p>
+                    <a href="page11.php">
+                        <p>Roll Backwards</p>
                     </a>
                 </div>
-                <div class="col-xs-2">
-<!---------------------------------------------------------------Choice 3------------->
-                    <a href="">
-                        <p>Go forward</p>
-                    </a>
-                </div>
-                <div class="col-xs-3"></div>
+                <div class="col-xs-4"></div>
             </div>
         </div>
-        <h3>You come upon a divide in the hall, it splits in 3 directions. One leads to the left, the other forward, and the other right. No destinctions line the walls to determine whats down each corridor. You must choose where you go.</h3>
+        <h3>You thrust your shield up in front of you. You prepare for the worst that it has for you. One of its giant arms blasts into your shield. You feel tremendous force push against it and then your shield goes back and dissolves. Then it attacks your arm. It goes numb and limp. You still have your sword and you hope that will be enough.</h3>
         
         
     </body>

@@ -1,0 +1,109 @@
+<?php
+require "dbcontrol.php";
+$comm = get_db();
+
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Elrath's Journey Homepage</title>
+        <link rel="stylesheet" type="text/css"  href="elrath.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            body
+            {
+                background-image: url(pics/Amulet.jpg);
+                background-repeat:no-repeat;
+                background-position:50% 25%;
+                background-color: black;
+            }
+            h3
+            {
+                color:white;
+                background-color: brown;
+                text-align: center;
+                border-bottom: 4px solid;
+                border-bottom-color: darkgrey;
+                border-bottom-left-radius: 100px;
+                border-top: 1.5px solid;
+                border-top-color: darkgrey;
+                border-top-right-radius: 100px;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            p
+            {
+                background-color:black;
+                color:white;
+                border-bottom-left-radius: 30px;
+                border-top-right-radius: 30px;
+                border-color:white;
+                border-style: double;
+                padding:10px 30px 10px 30px;
+                margin-left: auto;
+                margin-right:auto;
+                cursor:pointer;
+            }
+            table
+            {
+                color: white;
+                background-color: brown;
+                text-align: center;
+                border-bottom: 4px solid;
+                border-bottom-color: darkgrey;
+                border-top: 1.5px solid;
+                border-top-color: darkgrey;
+            }
+            tr, th
+            {
+                border-bottom: 4px solid;
+                border-bottom-color: darkgrey;
+                border-top: 1.5px solid;
+                border-top-color: darkgrey;
+            }
+            td
+            {
+                border-bottom: 1.5px solid;
+                border-bottom-color: darkgrey;
+                border-top: 1.5px solid;
+                border-top-color: darkgrey;
+                border-left: 4px solid;
+                border-left: darkgrey;
+                border-right: 1.5px solid;
+                border-right-color: darkgrey;
+            }
+            a
+            {
+                display:inline-block;
+            }
+            .center
+            {
+                margin-left: auto;
+                margin-right: auto;
+                display:block;
+            }
+        </style>
+    </head>
+    <body>        
+        
+        <h3>You feel grass tickling your ear. The cool night air seems a little chilly for this time of year and you can hear something small scurry from the bushes to your left into the water. You slowly open your eyes, wondering at the dream you just had. It had felt so real, so true to what you know. You think of your wife and kids, who are right now, safe and sound in your cottage. Then you look down at your hand and notice a burn mark, it is the same mark as that Mysterious Amulet you broke just seconds before waking up on this bank. Then you remembered.</h3>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3"></div>
+                <div class="col-xs-2">
+<!---------------------------------------------------------------Choice 1------------->
+                    <a href="resolve.php">
+                        <p>The End</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>

@@ -16,7 +16,7 @@ $comm = get_db();
         <style>
             body
             {
-                background-image: url(pics/Hallway.jpg);
+                background-image: url(pics/BossRoomWithBoss.jpg);
                 background-repeat:no-repeat;
                 background-position:50% 25%;
                 background-color: black;
@@ -180,29 +180,23 @@ $comm = get_db();
         <br><br>
         <div class="container">
             <div class="row">
-                <div class="col-xs-3"></div>
+                <div class="col-xs-4"></div>
                 <div class="col-xs-2">
 <!---------------------------------------------------------------Choice 1------------->
-                    <a href="page2.php">
-                        <p>Go to the left</p>
+                    <a href="page9.php">
+                        <p>Stab</p>
                     </a>
                 </div>
                 <div class="col-xs-2">
 <!---------------------------------------------------------------Choice 2------------->
-                    <a href="">
-                        <p>Go to the right</p>
+                    <a href="page10.php">
+                        <p>Block</p>
                     </a>
                 </div>
-                <div class="col-xs-2">
-<!---------------------------------------------------------------Choice 3------------->
-                    <a href="">
-                        <p>Go forward</p>
-                    </a>
-                </div>
-                <div class="col-xs-3"></div>
+                <div class="col-xs-4"></div>
             </div>
         </div>
-        <h3>You come upon a divide in the hall, it splits in 3 directions. One leads to the left, the other forward, and the other right. No destinctions line the walls to determine whats down each corridor. You must choose where you go.</h3>
+        <h3>You steel yourself and prepare yourself for the fight ahead of you. You know what you must do, you must defeat this monster. Its red eyes glare deep into as an acceptance of your challange. It is waiting for your first move.</h3>
         
         
     </body>

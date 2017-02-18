@@ -16,7 +16,7 @@ $comm = get_db();
         <style>
             body
             {
-                background-image: url(pics/Hallway.jpg);
+                background-image: url(pics/BossRoomWithBoss.jpg);
                 background-repeat:no-repeat;
                 background-position:50% 25%;
                 background-color: black;
@@ -180,29 +180,23 @@ $comm = get_db();
         <br><br>
         <div class="container">
             <div class="row">
-                <div class="col-xs-3"></div>
+                <div class="col-xs-4"></div>
                 <div class="col-xs-2">
 <!---------------------------------------------------------------Choice 1------------->
-                    <a href="page2.php">
-                        <p>Go to the left</p>
+                    <a href="page7.php">
+                        <p>Flee</p>
                     </a>
                 </div>
                 <div class="col-xs-2">
 <!---------------------------------------------------------------Choice 2------------->
-                    <a href="">
-                        <p>Go to the right</p>
+                    <a href="page8.php">
+                        <p>Fight</p>
                     </a>
                 </div>
-                <div class="col-xs-2">
-<!---------------------------------------------------------------Choice 3------------->
-                    <a href="">
-                        <p>Go forward</p>
-                    </a>
-                </div>
-                <div class="col-xs-3"></div>
+                <div class="col-xs-4"></div>
             </div>
         </div>
-        <h3>You come upon a divide in the hall, it splits in 3 directions. One leads to the left, the other forward, and the other right. No destinctions line the walls to determine whats down each corridor. You must choose where you go.</h3>
+        <h3>You decide to follow that emanating blue light. As you get to the end of the hallway you find yourself in a dark room. There is a stairway with a Blue Glowing Crystal on it. It seems so peaceful, and then you notice it. A dark shadowy substance underneath the glow. In second The Dark Mist erupts from the crystal and there is stands before you. This is what you came here for. </h3>
         
         
     </body>

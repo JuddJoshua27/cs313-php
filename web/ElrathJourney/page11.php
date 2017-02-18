@@ -16,7 +16,7 @@ $comm = get_db();
         <style>
             body
             {
-                background-image: url(pics/Hallway.jpg);
+                background-image: url(pics/Amulet.jpg);
                 background-repeat:no-repeat;
                 background-position:50% 25%;
                 background-color: black;
@@ -180,29 +180,17 @@ $comm = get_db();
         <br><br>
         <div class="container">
             <div class="row">
-                <div class="col-xs-3"></div>
+                <div class="col-xs-5"></div>
                 <div class="col-xs-2">
 <!---------------------------------------------------------------Choice 1------------->
-                    <a href="page2.php">
-                        <p>Go to the left</p>
+                    <a href="backInTime.html">
+                        <p>Then....</p>
                     </a>
                 </div>
-                <div class="col-xs-2">
-<!---------------------------------------------------------------Choice 2------------->
-                    <a href="">
-                        <p>Go to the right</p>
-                    </a>
-                </div>
-                <div class="col-xs-2">
-<!---------------------------------------------------------------Choice 3------------->
-                    <a href="">
-                        <p>Go forward</p>
-                    </a>
-                </div>
-                <div class="col-xs-3"></div>
+                <div class="col-xs-5"></div>
             </div>
         </div>
-        <h3>You come upon a divide in the hall, it splits in 3 directions. One leads to the left, the other forward, and the other right. No destinctions line the walls to determine whats down each corridor. You must choose where you go.</h3>
+        <h3>You roll backwards and try and escape this battle. You turn around to see if it is following you and to your horror you see a huge fireball being built up and cast at you. You know this is the end. Without realizing what you are doing, you grab for the Amulet that is loosely tied around your neck. It was told to you to break it whenever you were in the most dire of circumstances. This seemed to be that time. You break the green crystal a slight moment before the ball of fire had left the Entities whispy arms. Then....</h3>
         
         
     </body>

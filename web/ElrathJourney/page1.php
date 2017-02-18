@@ -144,6 +144,8 @@ $comm = get_db();
         $total_magic = $magic + $magic_manip;
         $total_attack = $attack + $attack_manip;
         $total_defence = $defence + $defence_manip;
+        
+        $_SESSION("player_id") = $player_id;
         ?>
         
         <div class="container-fluid">
