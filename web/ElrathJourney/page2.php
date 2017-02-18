@@ -8,6 +8,11 @@ $comm = get_db();
     <head>
         <title>Elrath's Journey Homepage</title>
         <link rel="stylesheet" type="text/css"  href="elrath.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <style>
             body
             {
@@ -27,26 +32,10 @@ $comm = get_db();
                 border-top: 1.5px solid;
                 border-top-color: darkgrey;
                 border-top-right-radius: 100px;
-                padding-left: 20px;
-                padding-right: 20px;
-                margin-right:76%;
+                padding-left: 40px;
+                padding-right: 40px;
             }
-            .anotherh3
-            {
-                color:white;
-                background-color: brown;
-                text-align: center;
-                border-bottom: 4px solid;
-                border-bottom-color: darkgrey;
-                border-bottom-left-radius: 100px;
-                border-top: 1.5px solid;
-                border-top-color: darkgrey;
-                border-top-right-radius: 100px;
-                padding-left: 20px;
-                padding-right: 20px;
-                margin:auto;
-            }
-            h4
+            p
             {
                 background-color:black;
                 color:white;
@@ -68,7 +57,6 @@ $comm = get_db();
                 border-bottom-color: darkgrey;
                 border-top: 1.5px solid;
                 border-top-color: darkgrey;
-                margin-right:76%;
             }
             tr, th
             {
@@ -102,17 +90,6 @@ $comm = get_db();
     </head>
     <body>
         
-        <h3 class="anotherh3">The Hallway ends in a dead end but on the ground lies a tarnished chest. It seems as if it has laid there for ages, yet you feel a distinct warmth emanating from inside. A feeling of comfort comes over you.</h3>
-        <div class="center">
-            <a href="page3.php">
-                <h4>Open Chest</h4>
-            </a>
-        
-            <a href="page4.php">
-                <h4>Leave</h4>
-            </a>
-        
-        </div>
        <?php
         session_start();
         $userID = $_SESSION["userID"];
@@ -167,30 +144,61 @@ $comm = get_db();
         $total_magic = $magic + $magic_manip;
         $total_attack = $attack + $attack_manip;
         $total_defence = $defence + $defence_manip;
-            
+        ?>
         
-        echo "<h3>" . $user_name . "<br>" . 
-            "HP: " . $total_health . "  |  MP: " . $total_magic . "<br>" .
-            "Attack: " . $total_attack . " |  Defence: " . $total_defence .  "<br>" .
-            "Gold: " . $gold . "</h3>";
-        ?>
-        <table>
-            <tr>
-                <th>Item Name</th>
-                <th>Item Description</th>
-            </tr>        
-        <?php
-        $statement = $comm->prepare("SELECT * FROM inventory i INNER JOIN player_inventory pi ON i.id = pi.inventory_id WHERE pi.player_id = $player_id;");
-        $statement->execute();
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-3">
+                    <?php
+                    echo "<h3>" . $user_name . "<br>" . 
+                        "HP: " . $total_health . "  |  MP: " . $total_magic . "<br>" .
+                        "Attack: " . $total_attack . " |  Defence: " . $total_defence .  "<br>" .
+                        "Gold: " . $gold . "</h3>";
+                    ?>
+                </div>
+            <div class="col-xs-6"></div>
+                <div class="col-xs-3">
+                    <br>
+                    <table>
+                        <tr>
+                            <th>Item Name</th>
+                            <th>Item Description</th>
+                        </tr>        
+                            <?php
+                            $statement = $comm->prepare("SELECT * FROM inventory i INNER JOIN player_inventory pi ON i.id = pi.inventory_id WHERE pi.player_id = $player_id;");
+                            $statement->execute();
             
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-        {
-            echo "<tr>" . "<td>" . $row["item_name"] . "</td>" . "<td>" . $row["description"] . "</td>" . "</tr>";
-        }
-            
-            $statement = $comm->prepare("UPDATE login SET page_number = 2 WHERE id = $userID");
-            $statement->execute();
-        ?>
-        </table>        
+                            while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+                            {
+                                echo "<tr>" . "<td>" . $row["item_name"] . "</td>" . "<td>" . $row["description"] . "</td>" . "</tr>";
+                            }
+                            ?>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4"></div>
+                <div class="col-xs-2">
+<!---------------------------------------------------------------Choice 1------------->
+                    <a href="page3.php">
+                        <p>Open the Chest</p>
+                    </a>
+                </div>
+                <div class="col-xs-2">
+<!---------------------------------------------------------------Choice 2------------->
+                    <a href="page4.php">
+                        <p>Leave</p>
+                    </a>
+                </div>
+                
+                <div class="col-xs-4"></div>
+            </div>
+        </div>
+        <h3>The Hallway ends in a dead end but on the ground lies a tarnished chest. It seems as if it has laid there for ages, yet you feel a distinct warmth emanating from inside. A feeling of comfort comes over you.</h3>
+        
+        
     </body>
 </html>

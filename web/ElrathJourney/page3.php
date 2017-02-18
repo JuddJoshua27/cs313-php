@@ -8,6 +8,11 @@ $comm = get_db();
     <head>
         <title>Elrath's Journey Homepage</title>
         <link rel="stylesheet" type="text/css"  href="elrath.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <style>
             body
             {
@@ -27,26 +32,10 @@ $comm = get_db();
                 border-top: 1.5px solid;
                 border-top-color: darkgrey;
                 border-top-right-radius: 100px;
-                padding-left: 20px;
-                padding-right: 20px;
-                margin-right:76%;
+                padding-left: 40px;
+                padding-right: 40px;
             }
-            .anotherh3
-            {
-                color:white;
-                background-color: brown;
-                text-align: center;
-                border-bottom: 4px solid;
-                border-bottom-color: darkgrey;
-                border-bottom-left-radius: 100px;
-                border-top: 1.5px solid;
-                border-top-color: darkgrey;
-                border-top-right-radius: 100px;
-                padding-left: 20px;
-                padding-right: 20px;
-                margin:auto;
-            }
-            h4
+            p
             {
                 background-color:black;
                 color:white;
@@ -68,7 +57,6 @@ $comm = get_db();
                 border-bottom-color: darkgrey;
                 border-top: 1.5px solid;
                 border-top-color: darkgrey;
-                margin-right:76%;
             }
             tr, th
             {
@@ -102,16 +90,6 @@ $comm = get_db();
     </head>
     <body>
         
-        <h3 class="anotherh3">As you open the chest, the brilliancy of the treasure takes your breath away for a moment. Nestled at the bottom of the chest are the most beautiful pants you have ever seen. The brightest of white dawns your eyes as you lift these Divine Pants off of the wood. As you slip into them, you feel energized. It is as if Heaven itself is giving you the strength to fight the evil buried within these halls. Replacing your Steel Leggings over your new pants, you turn and go back to the split in the hall and reorient yourself as you came upon the intersection so you do not get lost or confused. The other two choices are yours to take.</h3>
-        <div class="center">
-            <a href="">
-                <h4>Go strait</h4>
-            </a>
-        
-            <a href="">
-                <h4>Go to the right</h4>
-            </a>
-        </div>
        <?php
         session_start();
         $userID = $_SESSION["userID"];
@@ -178,31 +156,60 @@ $comm = get_db();
         $total_magic = $magic + $magic_manip;
         $total_attack = $attack + $attack_manip;
         $total_defence = $defence + $defence_manip;
-            
+        ?>
         
-        echo "<h3>" . $user_name . "<br>" . 
-            "HP: " . $total_health . "  |  MP: " . $total_magic . "<br>" .
-            "Attack: " . $total_attack . " |  Defence: " . $total_defence .  "<br>" .
-            "Gold: " . $gold . "</h3>";
-        ?>
-        <table>
-            <tr>
-                <th>Item Name</th>
-                <th>Item Description</th>
-            </tr>        
-        <?php
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-3">
+                    <?php
+                    echo "<h3>" . $user_name . "<br>" . 
+                        "HP: " . $total_health . "  |  MP: " . $total_magic . "<br>" .
+                        "Attack: " . $total_attack . " |  Defence: " . $total_defence .  "<br>" .
+                        "Gold: " . $gold . "</h3>";
+                    ?>
+                </div>
+            <div class="col-xs-6"></div>
+                <div class="col-xs-3">
+                    <br>
+                    <table>
+                        <tr>
+                            <th>Item Name</th>
+                            <th>Item Description</th>
+                        </tr>        
+                            <?php
+                            $statement = $comm->prepare("SELECT * FROM inventory i INNER JOIN player_inventory pi ON i.id = pi.inventory_id WHERE pi.player_id = $player_id;");
+                            $statement->execute();
             
-        $statement = $comm->prepare("SELECT * FROM inventory i INNER JOIN player_inventory pi ON i.id = pi.inventory_id WHERE pi.player_id = $player_id;");
-        $statement->execute();
-            
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-        {
-            echo "<tr>" . "<td>" . $row["item_name"] . "</td>" . "<td>" . $row["description"] . "</td>" . "</tr>";
-        }
-            
-            $statement = $comm->prepare("UPDATE login SET page_number = 3 WHERE id = $userID");
-            $statement->execute();
-        ?>
-        </table>        
+                            while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+                            {
+                                echo "<tr>" . "<td>" . $row["item_name"] . "</td>" . "<td>" . $row["description"] . "</td>" . "</tr>";
+                            }
+                            ?>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4"></div>
+                <div class="col-xs-2">
+<!---------------------------------------------------------------Choice 2------------->
+                    <a href="page5.php">
+                        <p>Go Strait</p>
+                    </a>
+                </div>
+                <div class="col-xs-2">
+<!---------------------------------------------------------------Choice 3------------->
+                    <a href="page12.php">
+                        <p>Go to the Right</p>
+                    </a>
+                </div>
+                <div class="col-xs-4"></div>
+            </div>
+        </div>
+        <h3>As you open the chest, the brilliancy of the treasure takes your breath away for a moment. Nestled at the bottom of the chest are the most beautiful pants you have ever seen. The brightest of whites dawn upon your eyes as you lift these Divine Pants off of the wood. As you slip into them, you feel energized. It is as if Heaven itself is giving you the strength to fight the evil buried within these halls. Replacing the Steel Leggings over your new pants, you turn and walk back to the intersection in the hall full of vigor. The other two choices are yours to take.</h3>
+        
+        
     </body>
 </html>

@@ -182,16 +182,19 @@ $comm = get_db();
             <div class="row">
                 <div class="col-xs-3"></div>
                 <div class="col-xs-2">
+<!---------------------------------------------------------------Choice 1------------->
                     <a href="page2.php">
                         <p>Go to the left</p>
                     </a>
                 </div>
                 <div class="col-xs-2">
+<!---------------------------------------------------------------Choice 2------------->
                     <a href="">
                         <p>Go to the right</p>
                     </a>
                 </div>
                 <div class="col-xs-2">
+<!---------------------------------------------------------------Choice 3------------->
                     <a href="">
                         <p>Go forward</p>
                     </a>
