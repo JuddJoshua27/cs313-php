@@ -151,7 +151,7 @@ $comm = get_db();
                 <div class="col-xs-3">
                     <?php
                     echo "<h3>" . $user_name . "<br>" . 
-                        "HP: " . $total_health - 100 . "  |  MP: " . $total_magic . "<br>" .
+                        "HP: " . $total_health . "  |  MP: " . $total_magic . "<br>" .
                         "Attack: " . $total_attack . " |  Defence: " . $total_defence .  "<br>" .
                         "Gold: " . $gold . "</h3>";
                     ?>
