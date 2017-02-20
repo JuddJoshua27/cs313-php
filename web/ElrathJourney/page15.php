@@ -181,29 +181,23 @@ $comm = get_db();
         <br><br>
         <div class="container">
             <div class="row">
-                <div class="col-xs-3"></div>
+                <div class="col-xs-4"></div>
                 <div class="col-xs-2">
 <!---------------------------------------------------------------Choice 1------------->
-                    <a href="page2.php">
-                        <p>Go to the Left</p>
+                    <a href="page19.php">
+                        <p>Go down the other corridor</p>
                     </a>
                 </div>
                 <div class="col-xs-2">
 <!---------------------------------------------------------------Choice 2------------->
-                    <a href="page5.php">
-                        <p>Go Strait</p>
+                    <a href="page1.php">
+                        <p>Go back</p>
                     </a>
                 </div>
-                <div class="col-xs-2">
-<!---------------------------------------------------------------Choice 3------------->
-                    <a href="page12.php">
-                        <p>Go to the Right</p>
-                    </a>
-                </div>
-                <div class="col-xs-3"></div>
+                <div class="col-xs-4"></div>
             </div>
         </div>
-        <h3>You come upon a divide in the hall, it splits in 3 directions. One leads to the left, the other forward, and the other right. No destinctions line the walls to determine whats down each corridor. You must choose where you go.</h3>
+        <h3>You find it best to attack Rat 2 who seems to be the biggest rat. You lunge forward and stab it through the head. It collapses instantly without a sound and the other rats scatter and run away. Behind the Rats you notice an old chest. As you open it you see it is filled with a huge amount of Gold. With your coin pouch bulging with money, you head back to the fork in the hallway. The other corridor is open for you to take, or you can go back to the main hallway.</h3>
         
         
     </body>

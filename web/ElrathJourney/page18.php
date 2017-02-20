@@ -182,7 +182,7 @@ $comm = get_db();
         <br><br>
         <div class="container">
             <div class="row">
-                <div class="col-xs-3"></div>
+                <div class="col-xs-4"></div>
                 <div class="col-xs-2">
 <!---------------------------------------------------------------Choice 1------------->
                     <a href="page19.php">
@@ -195,7 +195,7 @@ $comm = get_db();
                         <p>Go back</p>
                     </a>
                 </div>
-                <div class="col-xs-3"></div>
+                <div class="col-xs-4"></div>
             </div>
         </div>
         <h3>You turn around and attack Rat 2 slicing its head clean off. In your quick turnaround Rat 3 attempted to lunge at you but missed. You hear a sick crunching sound as its neck breaks on the wall behind you. You notice behind the Rats a chest, as you open it you realize it is full of 1000 Gold coins. With your coin pouch bulging with money, you head back to the fork in the hallway. The other corridor is open for you to take, or you can go back to the main hallway.</h3>
