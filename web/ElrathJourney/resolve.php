@@ -1,7 +1,7 @@
 <?php
-require "dbcontrol.php"
+require "dbcontrol.php";
 $comm = get_db();
-/*
+
 $statement = $comm->prepare("DELETE FROM player_inventory");
 $statement->execute();
 $statement = $comm->prepare("DELETE FROM player");
@@ -11,5 +11,5 @@ $statement->execute();
 
 session_start();
 session_destroy();
-header('location: login.html');*/
+header('location: login.html');
 ?>
