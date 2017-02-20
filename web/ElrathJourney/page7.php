@@ -190,7 +190,7 @@ $comm = get_db();
                 </div>
             </div>
         </div>
-        <h3>Sheer horror overcomes you. You aren’t strong enough to take this horror on. You drop your sword and turn to run. But the ground before you turns into the same dark mist. You begin to sink slowly into it and you know it is the end. Before you realize what you are doing, you reach for the Mysterious Amulet that is tied loosely around your neck. At the moment before you feel your consciousness flee from you, you close your eyes and squeeze the Amulet, breaking the crystal in the middle. Then....</h3>
+        <h3>Sheer horror overcomes you. You aren’t strong enough to take this nightmare on. You drop your sword and turn to run. But the ground before you turns into the same dark mist. You begin to sink slowly into it and you know it is the end. Before you realize what you are doing, you reach for the Mysterious Amulet that is tied loosely around your neck. At the moment before you feel your consciousness flee from you, you close your eyes and squeeze the Amulet, breaking the crystal in the middle. Then....</h3>
         
         
     </body>

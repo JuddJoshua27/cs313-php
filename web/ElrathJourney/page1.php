@@ -192,7 +192,7 @@ $comm = get_db();
                 <div class="col-xs-2">
 <!---------------------------------------------------------------Choice 2------------->
                     <a href="page5.php">
-                        <p>Go Strait</p>
+                        <p>Go Straight</p>
                     </a>
                 </div>
                 <div class="col-xs-2">
@@ -204,7 +204,7 @@ $comm = get_db();
                 <div class="col-xs-3"></div>
             </div>
         </div>
-        <h3>You come upon a divide in the hall, it splits in 3 directions. One leads to the left, the other forward, and the other right. No destinctions line the walls to determine whats down each corridor. You must choose where you go.</h3>
+        <h3>You come upon a divide in the hall, it splits in 3 directions. One leads to the left, another forward, and the last to the right. No destinctions line the walls to determine what is down each corridor. You must choose where you go.</h3>
         
         
     </body>

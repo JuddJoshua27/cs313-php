@@ -203,7 +203,7 @@ $comm = get_db();
                 <div class="col-xs-4"></div>
             </div>
         </div>
-        <h3>You take your sword and swing for the head of the skeleton. Your slash knocks its head clean off. The skeleton begins swinging its sword wildly because it can’t see anything. Its sword slices your stomach just below your chest-plate. You lose 10 HP.</h3>
+        <h3>You take your sword and swing for the head of the skeleton. Your slash knocks its head clean off. The skeleton begins swinging its sword wildly. Its sword slices your stomach just below your chest-plate. You lose 10 HP.</h3>
         
         
     </body>

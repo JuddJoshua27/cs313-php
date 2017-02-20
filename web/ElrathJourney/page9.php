@@ -190,7 +190,7 @@ $comm = get_db();
                 <div class="col-xs-5"></div>
             </div>
         </div>
-        <h3>You decide to attack first. You take your sword and thrust it straight into its chest. Your sword turn a dark black quickly and you see the same blackness twist up your arm and begin to destroy all of you. You know it is the end. Suddenly you reach up to the Amulet tied loosely around your neck. It was told to you to break it in the most dire of circumstances. With moments left before the Evil Being has devoured your soul, you squeeze the Amulet with all your might, breaking the green crystal within. Then....</h3>
+        <h3>You decide to attack first. You take your sword and thrust it straight into its chest. Your sword turns black quickly and you see the same darkness twist up your arm and begin to destroy all of you. You know it is the end. Suddenly you reach up to the Amulet tied loosely around your neck. It was told to you to break it in the most dire of circumstances. With moments left before the Evil Being has devoured your soul, you squeeze the Amulet with all your might, breaking the green crystal within. Then....</h3>
         
         
     </body>

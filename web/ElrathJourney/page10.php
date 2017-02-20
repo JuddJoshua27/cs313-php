@@ -196,7 +196,7 @@ $comm = get_db();
                 <div class="col-xs-4"></div>
             </div>
         </div>
-        <h3>You thrust your shield up in front of you. You prepare for the worst that it has for you. One of its giant arms blasts into your shield. You feel tremendous force push against it and then your shield goes back and dissolves. Then it attacks your arm. It goes numb and limp. You still have your sword and you hope that will be enough.</h3>
+        <h3>You thrust your shield up in front of you. You prepare for the worst. One of its giant arms blasts into your shield. You feel tremendous force push against it and then your shield turns black and dissolves. Then it attacks your arm which goes numb and limp. You still have your sword and you hope that will be enough.</h3>
         
         
     </body>

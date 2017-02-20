@@ -188,7 +188,7 @@ $comm = get_db();
                 </div>
                 <div class="col-xs-2">
                     <a href="page5.php">
-                        <p>Go Strait</p>
+                        <p>Go Straight</p>
                     </a>
                 </div>
                 <div class="col-xs-2">
@@ -199,7 +199,7 @@ $comm = get_db();
                 <div class="col-xs-3"></div>
             </div>
         </div>
-        <h3>You leave the chest behind not wanting to get distracted from your main quest. As you come back to the main intersection, you reorient yourself as you did earlier so you do not get lost or confused.Where do you go now?</h3>
+        <h3>You leave the chest behind not wanting to get distracted from your main quest. As you come back to the main intersection, you reorient yourself as you did earlier so you do not get lost or confused. Where do you go now?</h3>
         
         
     </body>

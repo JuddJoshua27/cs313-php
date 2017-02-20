@@ -190,7 +190,7 @@ $comm = get_db();
                 <div class="col-xs-3"></div>
             </div>
         </div>
-        <h3>You look at the Rat in the back and decide he would be the best to kill first. You attempt to lunge at it and trip over the other rats. You fall flat on your face and instantly are attacked at all angles by the Rats who Gnaw into you and rip you to shreds.Almost instinctively you reach up to the cord that is tied loosely around your neck. You grab the Amulet that  lay there and squeeze it with all of your remaining strength. It is enough to break the green crystal. Then....</h3>
+        <h3>You look at the Rat in the back and decide he would be the best to kill first. You attempt to lunge at it and trip over the other rats. You fall flat on your face and instantly are attacked at all angles by the Rats who Gnaw into you and rip you to shreds. Almost instinctively, you reach up to the cord that is tied loosely around your neck. You grab the Amulet that lay there and squeeze it with all of your remaining strength. It is enough to break the green crystal. Then....</h3>
         
         
     </body>

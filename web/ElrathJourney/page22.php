@@ -198,7 +198,7 @@ $comm = get_db();
                 <div class="col-xs-4"></div>
             </div>
         </div>
-        <h3>You take a low stance and swing or the Legs of the skeleton. You sweep its feet and legs just below the knees straight off into the darkness. But the skeleton isn’t quite finished. It claws the ground pulling its body frantically towards you.</h3>
+        <h3>You take a low stance and swing at the Legs of the skeleton. You sweep its feet and legs just below the knees straight off into the darkness. But the skeleton isn’t quite finished. It claws the ground pulling its body frantically towards you.</h3>
         
         
     </body>

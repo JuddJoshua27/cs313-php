@@ -201,7 +201,7 @@ $comm = get_db();
                 <div class="col-xs-4"></div>
             </div>
         </div>
-        <h3>You find it best to attack Rat 2 who seems to be the biggest rat. You lunge forward and stab it through the head. It collapses instantly without a sound and the other rats scatter and run away. Behind the Rats you notice an old chest. As you open it you see it is filled with a huge amount of Gold. With your coin pouch bulging with money, you head back to the fork in the hallway. The other corridor is open for you to take, or you can go back to the main hallway.</h3>
+        <h3>You find it best to attack the Rat in the middle who seems to be the biggest rat. You lunge forward and stab it through the head. It collapses instantly without a sound and the other rats scatter and run away. Behind the Rats you notice an old chest. As you open it, you see it is filled with a huge amount of Gold. With your coin pouch bulging with money, you head back to the fork in the hallway. The other corridor is open for you to take, or you can go back to the main hallway.</h3>
         
         
     </body>

@@ -197,7 +197,7 @@ $comm = get_db();
                 <div class="col-xs-4"></div>
             </div>
         </div>
-        <h3>The Hallway ends in a dead end but on the ground lies a tarnished chest. It seems as if it has laid there for ages, yet you feel a distinct warmth emanating from inside. A feeling of comfort comes over you.</h3>
+        <h3>The hallway comes to a dead end but on the ground lies a tarnished chest. It seems as if it has laid there for ages, yet you feel a distinct warmth emanating from inside. A feeling of comfort comes over you.</h3>
         
         
     </body>

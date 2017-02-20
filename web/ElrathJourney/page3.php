@@ -188,7 +188,7 @@ $comm = get_db();
                 <div class="col-xs-2">
 <!---------------------------------------------------------------Choice 2------------->
                     <a href="page5.php">
-                        <p>Go Strait</p>
+                        <p>Go Straight</p>
                     </a>
                 </div>
                 <div class="col-xs-2">

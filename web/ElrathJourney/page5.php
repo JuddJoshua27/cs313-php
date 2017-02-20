@@ -196,7 +196,7 @@ $comm = get_db();
                 <div class="col-xs-5"></div>
             </div>
         </div>
-        <h3>The hallway forward seems to stretch for ages and the darkness looms before you. Yet far away down this hall you see a faint blue glimmering light. As you get closer you see a dais raised in the middle of a grand, decaying chamber. Atleast you think it is a chamber, for the walls and ceiling cannot be seen through the haze of darkness.</h3>
+        <h3>The hallway forward seems to stretch for ages and the darkness looms before you, yet far away down this hall you see a faint blue glimmering light. As you get closer you see a dais raised in the middle of a grand, decaying chamber. At least you think it is a chamber, for the walls and ceiling cannot be seen through the haze of darkness.</h3>
         
         
     </body>

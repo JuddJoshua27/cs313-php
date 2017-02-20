@@ -190,7 +190,7 @@ $comm = get_db();
                 <div class="col-xs-3"></div>
             </div>
         </div>
-        <h3>8.	You attempt to dodge the attack and trip over a skull on the ground. Rat 3 jumps on top of you and takes a bite out of your neck. You scream in agony as the Rat starts to eat alive. Almost instinctively you reach up to the cord that is tied loosely around your neck. You grab the Amulet that  lay there and squeeze it with all of your remaining strength. It is enough to break the green crystal. Then....</h3>
+        <h3>8.	You attempt to dodge the attack and trip over a skull on the ground. The Rat jumps on top of you and takes a bite out of your neck. You scream in agony as the Rat starts to eat you alive. Almost instinctively you reach up to the cord that is tied loosely around your neck. You grab the Amulet that  lay there and squeeze it with all of your remaining strength. It is enough to break the green crystal. Then....</h3>
         
         
     </body>

@@ -196,7 +196,7 @@ $comm = get_db();
                 <div class="col-xs-4"></div>
             </div>
         </div>
-        <h3>You decide to attack the Rat closest to you. Your sword slices into it leaving it dead. During your attack though the Rat in the middle has now turned and blocked your exit while the Rat furthest from you snarls and lunges at you, knarled teath beared.</h3>
+        <h3>You decide to attack the Rat closest to you. Your sword slices into it leaving it lifeless. During your attack though, the Rat in the middle has now turned and blocked your exit while the Rat farthest from you snarls and lunges at you, knarled teath beared.</h3>
         
         
     </body>

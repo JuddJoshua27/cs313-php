@@ -196,7 +196,7 @@ $comm = get_db();
                 <div class="col-xs-4"></div>
             </div>
         </div>
-        <h3>You steel yourself and prepare yourself for the fight ahead of you. You know what you must do, you must defeat this monster. Its red eyes glare deep into as an acceptance of your challange. It is waiting for your first move.</h3>
+        <h3>You steel yourself and prepare for the fight ahead of you. You know what you must do, you must defeat this monster. Its red eyes glare deep into you as an acceptance of your challange. It is waiting for your first move.</h3>
         
         
     </body>

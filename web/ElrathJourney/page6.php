@@ -196,7 +196,7 @@ $comm = get_db();
                 <div class="col-xs-4"></div>
             </div>
         </div>
-        <h3>You decide to follow that emanating blue light. As you get to the end of the hallway you find yourself in a dark room. There is a stairway with a Blue Glowing Crystal on it. It seems so peaceful, and then you notice it. A dark shadowy substance underneath the glow. In second The Dark Mist erupts from the crystal and there is stands before you. This is what you came here for. </h3>
+        <h3>You decide to follow that emanating blue light. As you get to the end of the hallway you find yourself in a dark room. There is a stairway with a Blue Glowing Crystal on it. It seems so peaceful, and then you notice it: a dark shadowy substance underneath the glow. In seconds the Dark Mist erupts from the crystal and there it stands before you. This is what you came here for. </h3>
         
         
     </body>

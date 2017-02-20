@@ -197,7 +197,7 @@ $comm = get_db();
                 <div class="col-xs-5"></div>
             </div>
         </div>
-        <h3>The fearful sight sends you back-stepping quickly. In your frantic movement backwards the skeleton lunges after you and a clawed hand rips across your face and you stumble backwards. You lose 20 HP.</h3>
+        <h3>The fearful sight sends you back-stepping quickly. In your frantic movement backwards, the skeleton lunges after you and a clawed hand rips across your face as you stumble backwards. You lose 20 HP.</h3>
         
         
     </body>

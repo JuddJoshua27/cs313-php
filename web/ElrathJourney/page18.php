@@ -201,7 +201,7 @@ $comm = get_db();
                 <div class="col-xs-4"></div>
             </div>
         </div>
-        <h3>You turn around and attack Rat 2 slicing its head clean off. In your quick turnaround Rat 3 attempted to lunge at you but missed. You hear a sick crunching sound as its neck breaks on the wall behind you. You notice behind the Rats a chest, as you open it you realize it is full of 1000 Gold coins. With your coin pouch bulging with money, you head back to the fork in the hallway. The other corridor is open for you to take, or you can go back to the main hallway.</h3>
+        <h3>You turn around and attack the Rat blocking your exit, severing its head clean off. In your quick turnaround the other Rat attempts to lunge at you but misses. You hear a sick crunching sound as its neck breaks on the wall behind you. Behind the Rats, you notice a chest. As you open it you realize it is full of 1000 Gold coins. With your coin pouch bulging with money, you head back to the fork in the hallway. The other corridor is open for you to take, or you can go back to the main hallway.</h3>
         
         
     </body>

@@ -196,13 +196,13 @@ $comm = get_db();
                 <div class="col-xs-2">
 <!---------------------------------------------------------------Choice 3------------->
                     <a href="page16.php">
-                        <p>Attack the Rat furthest away</p>
+                        <p>Attack the Rat farthest away</p>
                     </a>
                 </div>
                 <div class="col-xs-3"></div>
             </div>
         </div>
-        <h3>You come upon a Crack in the wall. You take a look inside and you hear a snarling sound. As you glance down you see three huge rotten rats. They want the taste of flesh.</h3>
+        <h3>You come upon a crack in the wall. You take a look inside and you hear a snarling sound. As you glance down you see three huge rotten rats. They desire the taste of your flesh.</h3>
         
         
     </body>
