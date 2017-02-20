@@ -10,6 +10,8 @@ $statement->execute();
 
 $last_id = $comm->lastInsertId();
 
+$_SESSION["playerID"] = $last_id;
+
 $statement = $comm->prepare("INSERT INTO player_inventory(player_id, inventory_id) VALUES($last_id, 1)");
 $statement->execute();
 
