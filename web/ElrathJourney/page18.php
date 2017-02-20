@@ -124,6 +124,9 @@ $comm = get_db();
         
         $gold += 1000;
         
+        $statement = $comm->prepare("UPDATE player SET gold = $gold WHERE id = $_SESSION["playerID"]");
+        $statement->execute();
+        
         $statement = $comm->prepare("SELECT * FROM inventory i INNER JOIN player_inventory pi ON i.id = pi.inventory_id WHERE pi.player_id = $player_id; ");
         $statement->execute();
         

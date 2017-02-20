@@ -59,3 +59,7 @@ VALUES('Mysterious Amulet', 0, 0, 0, 0, 'Given to you by that old lady, and told
 SELECT * FROM inventory i
 	INNER JOIN player_inventory pi ON i.id = pi.inventory_id
 	WHERE pi.player_id = 3;
+
+UPDATE player
+SET gold = $gold
+WHERE id = $_SESSION["playerID"];
