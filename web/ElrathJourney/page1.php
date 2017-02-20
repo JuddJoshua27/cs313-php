@@ -122,6 +122,8 @@ $comm = get_db();
             $gold = $row["gold"];
         }
         
+        $_SESSION["playerID"] = $player_id;
+        
         $statement = $comm->prepare("SELECT * FROM inventory i INNER JOIN player_inventory pi ON i.id = pi.inventory_id WHERE pi.player_id = $player_id; ");
         $statement->execute();
         
