@@ -16,9 +16,9 @@ $comm = get_db();
         <style>
             body
             {
-                background-image: url(pics/WallCrack.jpg);
+                background-image: url(pics/Amulet.jpg);
                 background-repeat:no-repeat;
-                background-position:50% 80%;
+                background-position:50% 50%;
                 background-color: black;
             }
             h3
@@ -183,26 +183,14 @@ $comm = get_db();
                 <div class="col-xs-3"></div>
                 <div class="col-xs-2">
 <!---------------------------------------------------------------Choice 1------------->
-                    <a href="page2.php">
-                        <p>Go to the Left</p>
-                    </a>
-                </div>
-                <div class="col-xs-2">
-<!---------------------------------------------------------------Choice 2------------->
-                    <a href="page5.php">
-                        <p>Go Strait</p>
-                    </a>
-                </div>
-                <div class="col-xs-2">
-<!---------------------------------------------------------------Choice 3------------->
-                    <a href="page12.php">
-                        <p>Go to the Right</p>
+                    <a href="backInTime.html">
+                        <p>Then....</p>
                     </a>
                 </div>
                 <div class="col-xs-3"></div>
             </div>
         </div>
-        <h3>You come upon a divide in the hall, it splits in 3 directions. One leads to the left, the other forward, and the other right. No destinctions line the walls to determine whats down each corridor. You must choose where you go.</h3>
+        <h3>You look at the Rat in the back and decide he would be the best to kill first. You attempt to lunge at it and trip over the other rats. You fall flat on your face and instantly are attacked at all angles by the Rats who Gnaw into you and rip you to shreds.Almost instinctively you reach up to the cord that is tied loosely around your neck. You grab the Amulet that  lay there and squeeze it with all of your remaining strength. It is enough to break the green crystal. Then....</h3>
         
         
     </body>
