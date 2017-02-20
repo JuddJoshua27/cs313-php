@@ -18,7 +18,7 @@ $comm = get_db();
             {
                 background-image: url(pics/WallCrack.jpg);
                 background-repeat:no-repeat;
-                background-position:50% 25%;
+                background-position:50% 15%;
                 background-color: black;
             }
             h3
