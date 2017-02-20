@@ -8,8 +8,8 @@ $statement = $comm->prepare("DELETE FROM player");
 $statement->execute();
 $statement = $comm->prepare("DELETE FROM login");
 $statement->execute();
-*/
+
 session_start();
 session_destroy();
-header('location: login.html');
+header('location: login.html');*/
 ?>
