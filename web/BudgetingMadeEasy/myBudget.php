@@ -105,7 +105,7 @@ foreach ($rows as $row) {
             <div class="row">
                 <div class="col-xs-9"></div>
                 <div class="col-xs-3">
-                    <a href="editMyBudget.html"><button>Edit</button></a>
+                    <a href="editMyBudget.php"><button>Edit</button></a>
                 </div>
             </div>
         </div>
