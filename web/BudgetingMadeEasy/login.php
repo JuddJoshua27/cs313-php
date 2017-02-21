@@ -21,6 +21,7 @@ $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 // loop through and get the password of the user
 foreach ($rows as $row) {
+    $_SESSION["login_id"] = $row['id'];
     $hash = $row['password'];
 }
 

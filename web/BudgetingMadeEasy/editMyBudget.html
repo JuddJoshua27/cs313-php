@@ -1,48 +1,3 @@
-<?php
-require "dbcontrol.php";
-$comm = get_db();
-
-session_start();
-
-$user_id = $_SESSION["login_id"];
-$income = null;
-$savings = null;
-$donations = null;
-$groceries = null;
-$rent = null;
-$utilities = null;
-$transport = null;
-$AutoIns = null;
-$medical = null;
-$MedIns = null;
-$phone = null;
-$educations = null;
-$other = null;
-
-$statement = $comm->prepare("SELECT * FROM budget b INNER JOIN budgetLogin bl ON b.id = bl.budget_id WHERE bl.id = $user_id");
-$statement->execute();
-
-$rows = $statement->fetchAll(PDO::FETCH_ASSOC);
-
-// loop through and get the password of the user
-foreach ($rows as $row) {
-    $income = row["income"];
-    $savings = row["savings"];
-    $donations = row["church_donations"];
-    $groceries = row["groceries"];
-    $rent = row["rent_mortgage"];
-    $utilities = row["utilities"];
-    $transport = row["transportation"];
-    $AutoIns = row["auto_insurance"];
-    $medical = row["medical"];
-    $MedIns = row["medical_insurance"];
-    $phone = row["phone"];
-    $educations = row["education"];
-    $other = row["other_expenses"];
-}
-
-
-?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -101,14 +56,6 @@ foreach ($rows as $row) {
             </div>
         </nav>
         <h1>My Budget</h1>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-9"></div>
-                <div class="col-xs-3">
-                    <a href="editMyBudget.html"><button>Edit</button></a>
-                </div>
-            </div>
-        </div>
         
         <form action="createBudget.php" method="post">
             <table>

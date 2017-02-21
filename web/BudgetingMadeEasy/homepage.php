@@ -21,7 +21,7 @@ session_start();
         <div class="container-fluid">
             <div class="row"> 
                 <div class="col-xs-2">
-                    <img style="width:100px; heigh:100px;" src="mvelopes-logo.jpg">
+                    <img src="mvelopes-logo.jpg">
                 </div>
                 <div class="col-xs-2"></div>
                 <div class="col-xs-8">
