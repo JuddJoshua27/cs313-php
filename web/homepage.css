@@ -1,6 +1,6 @@
 h1,h3
 {
-    color: red;
+    color: white;
     text-align: center;
 }
 h2, h5, h4, .newh3
@@ -14,12 +14,6 @@ a:hover
     text-shadow: 5px;
 }
 .border
-{
-    border: 5px ridge yellow;
-    border-bottom-left-radius: 60px;
-    border-top-right-radius: 60px;
-}
-.secondaryBorder
 {
     border-bottom: 4px solid;
     border-bottom-color: darkgrey;
