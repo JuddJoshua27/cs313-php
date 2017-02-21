@@ -1,5 +1,5 @@
 <?php
-require "dbcontrol.php"
+require "dbcontrol.php";
 $comm = get_db();
 
 session_start();
@@ -19,6 +19,8 @@ $MedIns = $_POST["MInsurance"];
 $phone = $_POST["phone"];
 $education = $_POST["education"];
 $other = $_POST["other"];
+
+echo $donations . $groceries . $rent . $utilities . $transport . $AutoIns . $MedIns . $phone . $educations . $medical . $other . $savings . $income;
 
 $statement = $comm->prepare("INSERT INTO budget(church_donations, groceries, rent_mortgage, utilities, transportation, auto_insurance, medical_insurance, phone, education, medical, other_expenses, savings, income) VALUES($donations, $groceries, $rent, $utilities, $transport, $AutoIns, $MedIns, $phone, $educations, $medical, $other, $savings, $income)");
 $statement->execute();
