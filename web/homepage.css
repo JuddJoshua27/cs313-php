@@ -13,15 +13,6 @@ a:hover
     color:yellow;
     text-shadow: 5px;
 }
-.border
-{
-    border-bottom: 4px solid;
-    border-bottom-color: darkgrey;
-    border-bottom-left-radius: 100px;
-    border-top: 1.5px solid;
-    border-top-color: darkgrey;
-    border-top-right-radius: 100px;                
-}
 .elrathBorder
 {
     border: 3px ridge yellow;
