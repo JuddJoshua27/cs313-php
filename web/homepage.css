@@ -1,6 +1,6 @@
 h1,h3
 {
-    color: white;
+    color: red;
     text-align: center;
 }
 h2, h5, h4, .newh3
@@ -12,6 +12,21 @@ a:hover
 {
     color:yellow;
     text-shadow: 5px;
+}
+.border
+{
+    border: 5px ridge yellow;
+    border-bottom-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+.secondaryBorder
+{
+    border-bottom: 4px solid;
+    border-bottom-color: darkgrey;
+    border-bottom-left-radius: 100px;
+    border-top: 1.5px solid;
+    border-top-color: darkgrey;
+    border-top-right-radius: 100px;                
 }
 .elrathBorder
 {
