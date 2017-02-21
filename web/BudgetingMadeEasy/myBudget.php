@@ -109,95 +109,97 @@ foreach ($rows as $row) {
                 </div>
             </div>
         </div>
-        
-        <form action="createBudget.php" method="post">
-            <table>
-                <tr>
-                    <th>Category</th>
-                    <th>Budget</th>
-                </tr>
-                <tr>
-                    <td>Income</td>
-                    <td>
-                        <input type="text" name="income" id="income" autofocus>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Savings</td>
-                    <td>
-                        <input type="text" name="savings" id="savings">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Donations</td>
-                    <td>
-                        <input type="text" name="donations" id="donations">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Groceries</td>
-                    <td>
-                        <input type="text" name="groceries" id="groceries">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Rent / Mortgage</td>
-                    <td>
-                        <input type="text" name="rent" id="rent">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Utilities</td>
-                    <td>
-                        <input type="text" name="utilities" id="utilities">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Transportation</td>
-                    <td>
-                        <input type="text" name="transport" id="transport">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Auto Insurance</td>
-                    <td>
-                        <input type="text" name="AInsurance" id="AInsurance">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Medical</td>
-                    <td>
-                        <input type="text" name="medical" id="medical">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Medical Insurance</td>
-                    <td>
-                        <input type="text" name="MInsurance" id="MInsurance">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Phone</td>
-                    <td>
-                        <input type="text" name="phone" id="phone">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Education</td>
-                    <td>
-                        <input type="text" name="education" id="education">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Other Expenses</td>
-                    <td>
-                        <input type="text" name="other" id="other">
-                    </td>
-                </tr>
-            </table>    
-        </form>
-        
-        
-        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-3"></div>
+                <div class="col-xs-6">
+                    <table>
+                        <tr>
+                            <th>Category</th>
+                            <th>Budget</th>
+                        </tr>
+                        <tr>
+                            <td>Income</td>
+                            <td>
+                                <?php echo $income?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Savings</td>
+                            <td>
+                                <?php echo $savings?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Donations</td>
+                            <td>
+                                <?php echo $donations?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Groceries</td>
+                            <td>
+                                <?php echo $groceries?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Rent / Mortgage</td>
+                            <td>
+                                <?php echo $rent?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Utilities</td>
+                            <td>
+                                <?php echo $utilities?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Transportation</td>
+                            <td>
+                                <?php echo $transport?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Auto Insurance</td>
+                            <td>
+                                <?php echo $AutoIns?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Medical</td>
+                            <td>
+                                <?php echo $medical?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Medical Insurance</td>
+                            <td>
+                                <?php echo $MedIns?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>
+                                <?php echo $phone?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Education</td>
+                            <td>
+                                <?php echo $education?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Other Expenses</td>
+                            <td>
+                                <?php echo $other?>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-xs-3"></div>
+            </div>
+        </div>
     </body>
 </html>
