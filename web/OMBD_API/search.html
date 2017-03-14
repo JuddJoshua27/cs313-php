@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+            $.get("http://www.omdbapi.com/?t=", function(result){
+                $("#button").click(function(){
+                    console.log("Loading from API...")
+                });
+            });
+                
+                
+            })
+        </script>
+    </head>
+    <body>
+        <h1>Movie Search</h1>
+        <p>Please enter a movie title to search</p>
+        <form>
+            <input type="text" name="title" id="title">
+            <input type="button" name="button" id="button" >
+        </form>
+        <h3>Results</h3>
+        <div id="div1">
+        
+        </div>
+    </body>
+</html>

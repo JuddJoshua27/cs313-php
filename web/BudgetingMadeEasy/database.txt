@@ -19,7 +19,8 @@ CREATE TABLE public.budget
 	education MONEY,
 	medical MONEY,
 	other_expenses MONEY,
-	savings MONEY
+	savings MONEY,
+	income MONEY
 );
 CREATE TABLE public.expenses
 (
@@ -36,3 +37,5 @@ CREATE TABLE public.user_expenses
 	login_id INT REFERENCES budgetLogin(id),
 	expenses_id INT REFERENCES expenses(id)
 );
+
+INSERT INTO budget(church_donations, groceries, rent_mortgage, utilities, transportation, auto_insurance, medical_insurance, phone, education, medical, other_expenses, savings, income) VALUES()
