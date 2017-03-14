@@ -7,10 +7,10 @@
             $.get("http://www.omdbapi.com/?", function(result){
                 $("#button").click(function(){
                     console.log("Loading from API...");
-                    json = result;
+                    
+                    console.log(result);
                 });
             });
-            console.log(json);
         </script>
     </head>
     <body>
