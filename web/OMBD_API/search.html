@@ -3,12 +3,32 @@
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script>
-            var json;
-            $.get("http://www.omdbapi.com/?r=json&", function(result){
-                $("#button").click(function(){
-                    console.log("Loading from API...");
+            function change(result) {
+                var movie;
+                for(var i = 0; i < 10; i++) {
+                    movie = JSON.parse(result);
+                    //titles[i] = movie.Title;
+                    //console.log(movie.Title);
                     
-                    console.log(result);
+                }
+                
+            }
+            
+            
+            $(document).ready(function(){
+                $("#button").click(function(){
+                    var add1 = document.getElementById("title").value;
+                    var oriurl = "http://www.omdbapi.com/?s=";
+                    var url = oriurl.concat(add1);
+                        console.log(url);
+                    $.get(url, function(result){
+                        console.log("Loading from API...");
+                        console.log(result);
+                        
+                        change(result);
+                        
+                        $("#div1").text(result);
+                    });
                 });
             });
         </script>
